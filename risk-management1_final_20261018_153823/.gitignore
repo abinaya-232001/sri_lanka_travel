@@ -33,3 +33,8 @@ _backup/
 *.pkl
 venv/
 .ipynb_checkpoints/
+
+# Deployment: model files the backend loads at startup
+!crowd_pipeline.pkl
+!risk_pipeline.pkl
+!risk_label_encoder.pkl
