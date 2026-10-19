@@ -1,0 +1,7 @@
+Model,Accuracy,Precision,Recall,F1-Score
+Random Forest,0.81,0.832,0.81,0.794
+Decision Tree,0.714,0.702,0.714,0.705
+Neural Network (ANN),0.571,0.659,0.571,0.575
+Naive Bayes,0.571,0.589,0.571,0.567
+SVM,0.524,0.274,0.524,0.36
+KNN,0.381,0.325,0.381,0.332

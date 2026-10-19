@@ -1,0 +1,6 @@
+.env
+*.db
+uploads/
+data/officer_credentials.csv
+__pycache__/
+.pytest_cache/

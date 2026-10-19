@@ -1,0 +1,22 @@
+{
+  "name": "tour-ceylon-frontend",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Run Itinerary + Tourist SOS + Police + Immigration + Wellness + Live Data frontends together",
+  "scripts": {
+    "dev": "node scripts/free-dev-ports.js && concurrently -n travel,tourist,police,immigration,wellness,livedata -c cyan,magenta,yellow,red,green,blue \"npm run dev --prefix itinerary/frontend\" \"npm run dev --prefix sos/frontend/tourist\" \"npm run dev --prefix sos/frontend/police\" \"npm run dev --prefix sos/frontend/immigration\" \"npm run dev --prefix wellness/frontend\" \"npm run dev --prefix risk-management1/frontend\"",
+    "dev:travel": "npm run dev --prefix itinerary/frontend",
+    "dev:itinerary": "npm run dev --prefix itinerary/frontend",
+    "dev:tourist": "npm run dev --prefix sos/frontend/tourist",
+    "dev:police": "npm run dev --prefix sos/frontend/police",
+    "dev:immigration": "npm run dev --prefix sos/frontend/immigration",
+    "dev:wellness": "npm run dev --prefix wellness/frontend",
+    "dev:livedata": "npm run dev --prefix risk-management1/frontend",
+    "dev:backend": "cd shared/backend && .venv\\Scripts\\python.exe run.py",
+    "install:all": "npm install --prefix itinerary/frontend && npm install --prefix sos/frontend/tourist && npm install --prefix sos/frontend/police && npm install --prefix sos/frontend/immigration && npm install --prefix wellness/frontend && npm install --prefix risk-management1/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

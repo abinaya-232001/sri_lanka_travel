@@ -1,0 +1,101 @@
+flight_date,airline,flight_number,origin_airport,origin_iata,scheduled_arrival,actual_arrival,delay_minutes,flight_status,collected_at
+2026-04-21,Batik Air Malaysia,OD297,Kuala Lumpur International Airport (klia),KUL,2026-04-21T01:05:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL104,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6205,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air India,AI6204,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Kuwait Airways,KU6006,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Qatar Airways,QR4923,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Malaysia Airlines,MH9002,Malé International Airport,MLE,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL254,King Fahd International Airport,DMM,2026-04-21T02:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,AirAsia,AK140,Don Muang,DMK,2026-04-20T22:15:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL144,Chhatrapati Shivaji International (Sahar International),BOM,2026-04-20T23:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6247,Chhatrapati Shivaji International (Sahar International),BOM,2026-04-20T23:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air India,AI6224,Chhatrapati Shivaji International (Sahar International),BOM,2026-04-20T23:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL124,Madras International (Meenambakkam),MAA,2026-04-20T22:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air India,AI6216,Madras International (Meenambakkam),MAA,2026-04-20T22:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6227,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Myanmar Airways International,8M5309,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Kuwait Airways,KU6013,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Qantas,QF3423,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Japan Airlines,JL5732,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Finnair,AY6643,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air China,CA425,Chengdu Tianfu International Airport,TFU,2026-04-20T20:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Turkish Airlines,TK730,Istanbul Airport,IST,2026-04-21T05:20:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL176,Hyderabad Airport,HYD,2026-04-20T22:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Singapore Airlines,SQ468,Singapore Changi,SIN,2026-04-20T23:35:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,flydubai,FZ569,Dubai,DXB,2026-04-21T01:05:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Emirates,EK2040,Dubai,DXB,2026-04-21T01:05:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Thai Airways,TG307,Suvarnabhumi International,BKK,2026-04-20T23:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,IndiGo,6E1173,Madras International (Meenambakkam),MAA,2026-04-20T21:00:00+00:00,,10.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Qantas,QF8945,Bangalore International Airport,BLR,2026-04-20T20:15:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,LATAM Airlines,LA5609,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Iberia,IB6175,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,British Airways,BA6179,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,JetBlue,B66602,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,AlphaSky,AS5924,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,American Airlines,AA8176,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Oman Air,WY6387,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,RwandAir,WB1432,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL3012,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Royal Jordanian,RJ3811,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Thai AirAsia,FD140,Don Muang,DMK,2026-04-20T22:15:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL196,Indira Gandhi International,DEL,2026-04-20T22:20:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,IndiGo,6E1183,Bangalore International Airport,BLR,2026-04-20T20:15:00+00:00,,15.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Malaysia Airlines,MH179,Kuala Lumpur International Airport (klia),KUL,2026-04-20T22:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL309,Singapore Changi,SIN,2026-04-20T21:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,AirAsia,AK47,Kuala Lumpur International Airport (klia),KUL,2026-04-20T21:55:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Emirates,EK648,Dubai,DXB,2026-04-20T22:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Mauritius,MK9936,Dubai,DXB,2026-04-20T22:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Condor,DE5920,Dubai,DXB,2026-04-20T22:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Cathay Pacific,CX611,Hong Kong International,HKG,2026-04-20T23:45:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Qantas,QF8249,Hong Kong International,HKG,2026-04-20T23:45:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Finnair,AY5857,Hong Kong International,HKG,2026-04-20T23:45:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,American Airlines,AA8958,Hong Kong International,HKG,2026-04-20T23:45:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Qatar Airways,QR658,Doha International,DOH,2026-04-20T23:40:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6271,Melbourne - Tullamarine Airport,MEL,2026-04-20T22:25:00+00:00,,19.0,active,2026-04-20 15:12:34
+2026-04-20,Ethiopian Airlines,ET4252,Melbourne - Tullamarine Airport,MEL,2026-04-20T22:25:00+00:00,,19.0,active,2026-04-20 15:12:34
+2026-04-20,IndiGo,6E1169,Indira Gandhi International,DEL,2026-04-20T21:55:00+00:00,,10.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Cinnamon Air,C79302,China Bay,TRR,2026-04-20T17:00:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,RwandAir,WB1054,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,Finnair,AY2755,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,Iberia,IB6153,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL3502,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,Royal Air Maroc,AT5718,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,AlphaSky,AS5922,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,American Airlines,AA8307,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,Royal Jordanian,RJ3810,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,British Airways,BA6366,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,JetBlue,B66550,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,Oman Air,WY6268,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,LATAM Airlines,LA6033,Doha International,DOH,2026-04-20T16:50:00+00:00,,18.0,active,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL116,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Korean Air,KE5478,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6207,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air India,AI6206,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Kuwait Airways,KU6008,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Qatar Airways,QR4922,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Malaysia Airlines,MH9012,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Japan Airlines,JL5738,Malé International Airport,MLE,2026-04-20T17:30:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL168,Cochin International,COK,2026-04-20T17:25:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Cinnamon Air,C79404,China Bay,TRR,2026-04-20T16:15:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Singapore Airlines,SQ4943,Indira Gandhi International,DEL,2026-04-20T16:05:00+00:00,,44.0,active,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6229,Kuala Lumpur International Airport (klia),KUL,2026-04-20T16:00:00+00:00,,39.0,active,2026-04-20 15:12:34
+2026-04-20,Malaysia Airlines,MH9009,Kuala Lumpur International Airport (klia),KUL,2026-04-20T16:00:00+00:00,,39.0,active,2026-04-20 15:12:34
+2026-04-20,Kuwait Airways,KU6015,Kuala Lumpur International Airport (klia),KUL,2026-04-20T16:00:00+00:00,,39.0,active,2026-04-20 15:12:34
+2026-04-20,Japan Airlines,JL5730,Kuala Lumpur International Airport (klia),KUL,2026-04-20T16:00:00+00:00,,39.0,active,2026-04-20 15:12:34
+2026-04-20,Air Seychelles,HM6225,Suvarnabhumi International,BKK,2026-04-20T15:45:00+00:00,,5.0,active,2026-04-20 15:12:34
+2026-04-20,Myanmar Airways International,8M5405,Suvarnabhumi International,BKK,2026-04-20T15:45:00+00:00,,5.0,active,2026-04-20 15:12:34
+2026-04-20,Qantas,QF4243,Suvarnabhumi International,BKK,2026-04-20T15:45:00+00:00,,5.0,active,2026-04-20 15:12:34
+2026-04-20,Finnair,AY6647,Suvarnabhumi International,BKK,2026-04-20T15:45:00+00:00,,5.0,active,2026-04-20 15:12:34
+2026-04-20,China Eastern Airlines,MU713,Kunming,KMG,2026-04-20T21:10:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL128,Madras International (Meenambakkam),MAA,2026-04-20T17:20:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Air India,AI6220,Madras International (Meenambakkam),MAA,2026-04-20T17:20:00+00:00,,,scheduled,2026-04-20 15:12:34
+2026-04-20,Etihad Airways,EY396,Abu Dhabi International,AUH,2026-04-20T20:40:00+00:00,,23.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Egyptair,MS8135,Abu Dhabi International,AUH,2026-04-20T20:40:00+00:00,,23.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Ethiopian Airlines,ET1509,Abu Dhabi International,AUH,2026-04-20T20:40:00+00:00,,23.0,scheduled,2026-04-20 15:12:34
+2026-04-20,Cinnamon Air,C79406,Batticaloa,BTC,2026-04-20T16:15:00+00:00,,,active,2026-04-20 15:12:34
+2026-04-20,IndiGo,6E1179,Madras International (Meenambakkam),MAA,2026-04-20T16:15:00+00:00,,10.0,active,2026-04-20 15:12:34
+2026-04-20,Flexflight,W21862,Kuala Lumpur International Airport (klia),KUL,2026-04-20T17:35:00+00:00,,,unknown,2026-04-20 15:12:34
+2026-04-20,Cinnamon Air,C79304,Koggala,KCT,2026-04-20T14:05:00+00:00,,,active,2026-04-20 15:12:34
+2026-04-20,SriLankan Airlines,UL182,Tribhuvan International,KTM,2026-04-20T16:35:00+00:00,,49.0,active,2026-04-20 15:12:34
+2026-04-20,Air India,AI281,Indira Gandhi International,DEL,2026-04-20T16:05:00+00:00,,44.0,active,2026-04-20 15:12:34

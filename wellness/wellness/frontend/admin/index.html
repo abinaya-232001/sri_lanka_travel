@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Ceylon | Admin Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<div id="loginScreen" class="login-screen">
+  <div class="login-card">
+    <h1>Tour Ceylon Admin</h1>
+    <p class="sub">Sign in to manage centers, review flags, and view analytics.</p>
+    <input type="password" id="passwordInput" placeholder="Admin password" onkeydown="if(event.key==='Enter') doLogin()">
+    <button class="btn-primary" onclick="doLogin()">Sign In</button>
+    <div id="loginError" class="login-error"></div>
+  </div>
+</div>
+
+<div id="dashboard" class="dashboard" style="display:none;">
+  <nav class="admin-nav">
+    <div class="admin-brand">Tour Ceylon <span>Admin</span></div>
+    <div class="admin-tabs">
+      <button class="tab-btn active" data-tab="analytics" onclick="switchTab('analytics')">Analytics</button>
+      <button class="tab-btn" data-tab="centers" onclick="switchTab('centers')">Centers</button>
+      <button class="tab-btn" data-tab="flags" onclick="switchTab('flags')">Flagged Reviews</button>
+    </div>
+    <div class="admin-actions">
+      <a href="/" class="btn-secondary" style="text-decoration:none;">&larr; Back to Site</a>
+      <button class="btn-secondary" onclick="doLogout()">Sign Out</button>
+    </div>
+  </nav>
+
+  <main class="admin-main">
+    <div id="tabAnalytics" class="tab-panel"></div>
+    <div id="tabCenters" class="tab-panel" style="display:none;"></div>
+    <div id="tabFlags" class="tab-panel" style="display:none;"></div>
+  </main>
+</div>
+
+<div id="editModal" class="modal-overlay" style="display:none;">
+  <div class="modal-card">
+    <h3 id="modalTitle">Edit Center</h3>
+    <div id="modalForm"></div>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveModal()">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

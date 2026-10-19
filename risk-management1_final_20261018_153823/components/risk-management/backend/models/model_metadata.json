@@ -1,0 +1,144 @@
+{
+  "metadata_schema_version": 2,
+  "model_version": "v3.0-pipeline",
+  "training_timestamp": "2026-10-03T12:22:41.766524",
+  "python_version": "3.10.18 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:08:55) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "sklearn_version": "1.7.1",
+  "pandas_version": "2.3.2",
+  "numpy_version": "2.2.6",
+  "source_dataset": "master_dataset_fixed.csv",
+  "source_dataset_records": 144007,
+  "feature_list_raw": [
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_public_holiday",
+    "is_festival_period",
+    "avg_temperature_c",
+    "avg_rainfall_mm",
+    "daily_flights_at_cmb",
+    "hotel_occupancy_rate",
+    "capacity_per_day",
+    "is_eco_friendly",
+    "is_unesco",
+    "entrance_fee_lkr",
+    "category",
+    "season",
+    "district"
+  ],
+  "numeric_features": [
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_public_holiday",
+    "is_festival_period",
+    "avg_temperature_c",
+    "avg_rainfall_mm",
+    "daily_flights_at_cmb",
+    "hotel_occupancy_rate",
+    "capacity_per_day",
+    "is_eco_friendly",
+    "is_unesco",
+    "entrance_fee_lkr"
+  ],
+  "categorical_features_onehot": [
+    "category",
+    "season",
+    "district"
+  ],
+  "transformed_feature_count": 43,
+  "target_definition": {
+    "crowd_score_normalized": "SYNTHETIC. Formula: (annual_visitors/365 * season_mult * weekend_mult * holiday_mult * noise) / capacity_per_day, clipped to [0,1]. See simulate_crowd_data.py. Not an observed real-world value.",
+    "risk_level": "Threshold of crowd_score_normalized (>=0.75 High, >=0.45 Medium, else Low)."
+  },
+  "target_leakage_note": "is_weekend, is_public_holiday, season and capacity_per_day are direct ingredients of the generating formula and are also model features; hotel_occupancy_rate and daily_flights_at_cmb are generated from the same drivers. Measured with scripts/validate_model.py (2026-10-01): dropping capacity_per_day lowered site-holdout R2 from 0.3331 to -0.3630 and site-grouped CV (repeat 0, 5 folds) R2 from 0.555 to 0.295, so skill on unseen destinations depends mainly on this formula ingredient. Dropping occupancy+flights, is_weekend+is_public_holiday, or season individually changed R2 by about 0.01 or less, but month and day_of_week still carry equivalent information, so those tests cannot show the features are harmless. Random-split and date-block metrics are optimistic; report site-holdout and site-grouped CV.",
+  "encoding_note": "OneHotEncoder(handle_unknown='ignore') is used for category/season/district instead of LabelEncoder, to avoid an arbitrary integer ordering of nominal categories and to encode an unseen category as an all-zero row instead of silently mapping it to 0. Earlier notes quoted site-holdout R2 values of 0.68-0.91 and about 0.87-0.89; those came from an earlier experiment configuration and are NOT reproduced by this pipeline. The verified site-holdout R2 with this encoding is 0.3331.",
+  "hyperparameter_selection_note": "n_estimators=50, max_depth=12, min_samples_split=7 were chosen by a 3-fold random-row GridSearchCV on a random 80% split that included the 10 holdout sites (values lie on the grid edge). scripts/validate_model.py Section 6 repeated the search with site-grouped folds and no holdout sites: it selected near-identical settings (inner MAE 0.1153 vs 0.1155; holdout R2 0.3351 vs 0.3331), so the parameters are locked.",
+  "deployment_model_note": "models/crowd_pipeline.pkl and risk_pipeline.pkl are trained on a random 80% of rows from all 197 sites, including the 10 holdout sites. The site-holdout metrics come from a separate model trained without those sites, which is not saved.",
+  "best_hyperparameters": {
+    "n_estimators": 50,
+    "max_depth": 12,
+    "min_samples_split": 7
+  },
+  "primary_reported_metric": "site_holdout",
+  "site_holdout_evaluation": {
+    "description": "Entire sites held out of training. Tests generalization to unseen destinations (10 fixed sites: 4 Beach, 4 Nature, 1 Heritage, 1 Religious; harder than average).",
+    "train_sites": 187,
+    "test_sites": 10,
+    "held_out_site_names": [
+      "Bentota Beach",
+      "Bundala National Park",
+      "Colombo Lotus Tower",
+      "Kalpitiya Beach",
+      "Kande Viharaya",
+      "Kandy Lake",
+      "Minneriya National Park",
+      "Pasikuda Beach",
+      "Tangalle Beach",
+      "Wilpattu National Park"
+    ],
+    "train_records": 136697,
+    "test_records": 7310,
+    "regression_mae": 0.1232,
+    "regression_r2": 0.3331,
+    "regression_baseline_mae": 0.2835,
+    "regression_baseline_r2": -0.3476,
+    "classification_accuracy": 0.7731,
+    "classification_balanced_accuracy": 0.5754
+  },
+  "site_grouped_cv_evaluation": {
+    "description": "Site-grouped CV over all 197 sites, 5 folds x 3 repeats; every site is unseen once per repeat. Folds overlap across repeats, so the sd is a spread, not a confidence interval.",
+    "n_folds_total": 15,
+    "mae_mean": 0.1159,
+    "mae_sd": 0.0133,
+    "r2_mean": 0.5071,
+    "r2_sd": 0.109,
+    "r2_min": 0.3301,
+    "r2_max": 0.706
+  },
+  "date_block_cv_evaluation": {
+    "description": "5-fold CV without shuffling, in file order. The data file is sorted by date, so each fold is a contiguous block of dates and every site appears in training. Optimistic; not a test of unseen destinations.",
+    "cv_mae": 0.0694,
+    "cv_mae_std": 0.009,
+    "cv_r2": 0.8194,
+    "cv_r2_std": 0.0218
+  },
+  "random_split_evaluation": {
+    "description": "Random 80/20 row split. The same sites appear in train and test, so this is optimistic (site-level memorisation plus formula ingredients). Do not report as the primary metric.",
+    "train_records": 115205,
+    "test_records": 28802,
+    "regression_mae": 0.0679,
+    "regression_r2": 0.8492,
+    "regression_train_mae": 0.0661,
+    "regression_train_r2": 0.8542,
+    "classification_train_accuracy": 0.7991,
+    "classification_test_accuracy": 0.791,
+    "classification_test_balanced_accuracy": 0.8,
+    "baseline_mae": 0.1967,
+    "baseline_r2": -0.0
+  },
+  "independent_validation": {
+    "script": "scripts/validate_model.py",
+    "outputs": [
+      "outputs/validation_results.json",
+      "outputs/validation_summary.csv",
+      "outputs/validation_per_site.csv",
+      "outputs/validation_per_category.csv",
+      "outputs/validation_r2_comparison.png"
+    ],
+    "note": "Temporal 2024->2025, baselines, ablation, shuffled-target check, error analysis and calibration are computed there, not here."
+  },
+  "limitations": [
+    "crowd_score_normalized is synthetic; no metric measures agreement with real crowds.",
+    "Skill on unseen destinations depends heavily on capacity_per_day, an ingredient of the target's generating formula.",
+    "Errors on unseen destinations are mostly site-level offsets; annual visitors is not a model input.",
+    "Temporal 2024->2025 validation is nearly identical to a random split because the simulator reuses one formula in both years.",
+    "The deployed model was trained on rows from all 197 sites, including the 10 holdout sites."
+  ],
+  "risk_classes": [
+    "High",
+    "Low",
+    "Medium"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "FULL": {
+    "avg_quality": 4.484,
+    "budget_alignment": 0.767,
+    "dosha_compatibility": 0.513,
+    "dosha_n": 39
+  },
+  "NO-DOSHA": {
+    "avg_quality": 4.411,
+    "budget_alignment": 0.733,
+    "dosha_compatibility": 0.237,
+    "dosha_n": 38
+  },
+  "NO-NLP-QUALITY": {
+    "avg_quality": 4.044,
+    "budget_alignment": 0.733,
+    "dosha_compatibility": 0.45,
+    "dosha_n": 40
+  },
+  "NO-BUDGET": {
+    "avg_quality": 4.443,
+    "budget_alignment": 0.433,
+    "dosha_compatibility": 0.476,
+    "dosha_n": 42
+  },
+  "CONDITION-ONLY": {
+    "avg_quality": 3.845,
+    "budget_alignment": 0.417,
+    "dosha_compatibility": 0.29,
+    "dosha_n": 31
+  }
+}

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+**/.env
+*.log
+*.db
+*.joblib
+
+# Node
+
+# Node
+**/node_modules/
+**/dist/
+
+# Uploads / secrets
+components/shared/backend/uploads/photos/*
+components/shared/backend/uploads/docs/*
+components/shared/backend/uploads/chat/**
+!components/shared/backend/uploads/**/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local backup of nested git metadata
+_backup/
+
+*.pkl
+venv/
+.ipynb_checkpoints/

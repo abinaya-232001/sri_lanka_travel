@@ -1,0 +1,20 @@
+{
+  "_comment": "Demo immigration records. *_offset are days relative to today, so statuses stay realistic. Match a tourist by passport_number + nationality.",
+  "travellers": [
+    {"reference": "ETA-2026-000101", "passport_number": "UK1234567", "nationality": "UK",
+     "full_name": "Demo Tourist", "visa_type": "ETA Tourist (30 days)",
+     "valid_from_offset": -10, "valid_until_offset": 10, "entry_offset": -10, "exit_offset": null},
+    {"reference": "ETA-2026-000102", "passport_number": "N1234589", "nationality": "India",
+     "full_name": "Rahul Mehta", "visa_type": "ETA Tourist (30 days)",
+     "valid_from_offset": -25, "valid_until_offset": 5, "entry_offset": -25, "exit_offset": null},
+    {"reference": "ETA-2026-000103", "passport_number": "C01X77K42", "nationality": "Germany",
+     "full_name": "Lukas Becker", "visa_type": "ETA Tourist (30 days)",
+     "valid_from_offset": -40, "valid_until_offset": -9, "entry_offset": -40, "exit_offset": null},
+    {"reference": "ETA-2026-000106", "passport_number": "19AF44821", "nationality": "France",
+     "full_name": "Sophie Martin", "visa_type": "ETA Tourist (30 days)",
+     "valid_from_offset": -35, "valid_until_offset": -5, "entry_offset": -35, "exit_offset": -6},
+    {"reference": "MEV-2026-000107", "passport_number": "TK9021553", "nationality": "Japan",
+     "full_name": "Kenji Sato", "visa_type": "Multiple-entry Tourist (180 days)",
+     "valid_from_offset": -20, "valid_until_offset": 160, "entry_offset": -20, "exit_offset": null}
+  ]
+}

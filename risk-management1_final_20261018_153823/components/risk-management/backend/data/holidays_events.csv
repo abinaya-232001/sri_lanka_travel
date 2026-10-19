@@ -1,0 +1,24 @@
+﻿date,event_name,event_type,is_national_holiday,expected_impact_level
+1/14/2026,Thai Pongal,Religious,1,High
+1/25/2026,Duruthu Full Moon Poya,Religious,1,Medium
+2/4/2026,Independence Day,National,1,High
+2/23/2026,Navam Full Moon Poya,Religious,1,Medium
+3/25/2026,Medin Full Moon Poya,Religious,1,Medium
+4/13/2026,Sinhala Tamil New Year Eve,National,1,Very High
+4/14/2026,Sinhala Tamil New Year,National,1,Very High
+4/23/2026,Bak Full Moon Poya,Religious,1,Medium
+5/1/2026,May Day,National,1,Medium
+5/22/2026,Vesak Full Moon Poya,Religious,1,Very High
+5/23/2026,Vesak Holiday,National,1,Very High
+6/20/2026,Poson Full Moon Poya,Religious,1,High
+7/19/2026,Esala Full Moon Poya,Religious,1,High
+8/18/2026,Kandy Esala Perahera Start,Cultural,0,Very High
+8/27/2026,Kandy Esala Perahera End,Cultural,0,Very High
+8/17/2026,Nikini Full Moon Poya,Religious,1,Medium
+9/16/2026,Binara Full Moon Poya,Religious,1,Medium
+10/15/2026,Vap Full Moon Poya,Religious,1,Medium
+10/20/2026,Deepavali,Religious,1,High
+11/14/2026,Il Full Moon Poya,Religious,1,Medium
+12/13/2026,Unduvap Full Moon Poya,Religious,1,Medium
+12/25/2026,Christmas Day,National,1,High
+12/31/2026,New Year Eve,Cultural,0,High

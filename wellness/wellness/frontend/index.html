@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Ceylon | Ayurveda Wellness Matcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div id="pageBgLayer"></div>
+<div id="pageBgTint"></div>
+
+<header class="tc-dash-top">
+  <div class="tc-dash-wrap tc-dash-bar">
+    <a class="tc-dash-brand" href="http://127.0.0.1:5000/#/home"><img src="images/tourceylon-logo.png" alt="">TourCeylon</a>
+    <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('nav.tc-dash-tabs'); var o=n.classList.toggle('is-open'); this.setAttribute('aria-expanded', o?'true':'false')"><span></span><span></span><span></span></button>
+    <nav class="tc-dash-tabs" aria-label="Main">
+      <a href="http://127.0.0.1:5000/#/home">Home</a>
+      <a href="http://127.0.0.1:5000/#/itinerary/plan">Itinerary</a>
+      <a href="http://localhost:5003/" aria-current="page">Wellness</a>
+      <a href="http://localhost:5182/?embed=1">Risk analyst</a>
+      <a href="http://127.0.0.1:5000/#/sos">SOS</a>
+    </nav>
+    <div class="tc-dash-who">
+      <a class="tc-profile-btn" id="tc-who" href="http://127.0.0.1:5000/#/profile" aria-label="Profile"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 19.2c1.4-3 3.8-4.4 7-4.4s5.6 1.4 7 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+    </div>
+  </div>
+</header>
+<script>
+(function () {
+  var fromUrl = (new URLSearchParams(location.search).get("who") || "").replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase();
+  if (fromUrl) sessionStorage.setItem("tc-who", fromUrl);
+  var who = fromUrl || sessionStorage.getItem("tc-who") || "";
+  var btn = document.getElementById("tc-who");
+  if (who && btn) { btn.textContent = who; btn.classList.add("has-name"); }
+  if (!who) return;
+  document.querySelectorAll('a[href*="5182"], a[href*="5003"]').forEach(function (a) {
+    var url = new URL(a.href);
+    url.searchParams.set("who", who);
+    a.href = url.toString();
+  });
+})();
+</script>
+<div class="page-tools">
+  <button type="button" onclick="showMapView()">Map</button>
+  <div class="lang-switcher">
+    <button type="button" onclick="toggleLangDropdown(event)">&#127760; <span id="currentLangLabel">EN</span></button>
+    <div id="langDropdown">
+      <div class="lang-option" onclick="selectLanguage('en')">&#127468;&#127463; English</div>
+      <div class="lang-option" onclick="selectLanguage('de')">&#127465;&#127466; Deutsch</div>
+      <div class="lang-option" onclick="selectLanguage('ru')">&#127479;&#127482; Русский</div>
+      <div class="lang-option" onclick="selectLanguage('zh')">&#127464;&#127475; 中文</div>
+      <div class="lang-option" onclick="selectLanguage('ja')">&#127471;&#127477; 日本語</div>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <div id="heroBgLayer"></div>
+  <div class="hero-overlay"></div>
+  <div class="botanical-texture"></div>
+  <div class="hero-grid">
+    <div>
+      <div id="heroEyebrow" style="color:var(--teal-light); font-size:14px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:10px;">Tour Ceylon &middot; Wellness &amp; Retreats</div>
+      <h1 id="heroHeading">Welcome to Sri Lanka Wellness</h1>
+      <p id="heroTagline" style="font-size:18px; margin-bottom:6px;">Ayurveda treatment or a meditation retreat &mdash; find your match.</p>
+      <p id="heroBody">A research-backed matching engine connecting tourists to verified Ayurvedic treatment centers and meditation retreats across Sri Lanka &mdash; personalized to what you're looking for.</p>
+      <div class="stats-row">
+        <div class="stat"><div class="num">83</div><div class="lbl">Centers</div></div>
+        <div class="stat"><div class="num">37</div><div class="lbl">Medical</div></div>
+        <div class="stat"><div class="num">32</div><div class="lbl">Wellness</div></div>
+        <div class="stat"><div class="num">14</div><div class="lbl">Spiritual</div></div>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div id="heroSteps">
+        <div class="step-line"><div class="n">1</div> Choose Ayurveda treatment or a meditation retreat</div>
+        <div class="step-line"><div class="n">2</div> Tell us a bit about what you're looking for</div>
+        <div class="step-line"><div class="n">3</div> Get matched to verified centers instantly</div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.15); margin-top:14px; padding-top:14px; font-size:16px; color:rgba(255,255,255,0.7);">
+        Already know where you want to go? <a href="#" onclick="goBrowse(); return false;" style="color:var(--teal-light); font-weight:600;">Browse all 83 centers &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-wrap">
+  <div class="layout-grid">
+
+    <div>
+      <div id="formView">
+        <div class="path-select-panel" id="pathSelect">
+          <h2 style="color:var(--navy); margin-bottom:6px;">What are you looking for?</h2>
+          <div class="step-sub" style="margin-bottom:20px;">Choose the kind of stay you're planning.</div>
+          <div class="path-grid">
+            <button class="path-card" onclick="choosePath('ayurveda')">
+              <div class="path-icon"><img src="images/icon_ayurveda.jpg" alt="Ayurveda" style="width:56px;height:56px;object-fit:contain;"></div>
+              <div class="path-title">Ayurveda Treatment &amp; Wellness</div>
+              <div class="path-desc">Medical treatment, spa &amp; rejuvenation &mdash; matched by condition and dosha</div>
+            </button>
+            <button class="path-card" onclick="choosePath('spiritual')">
+              <div class="path-icon"><img src="images/icon_spiritual.jpg" alt="Meditation" style="width:56px;height:56px;object-fit:contain;"></div>
+              <div class="path-title">Meditation &amp; Spiritual Retreat</div>
+              <div class="path-desc">Vipassana courses, forest monasteries &amp; guided meditation</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="progress-wrap" id="progressWrap" style="display:none;">
+          <div class="progress-step active" id="ps1">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="ps2">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="ps3">3</div>
+        </div>
+
+        <div class="panel" id="wizardPanel" style="display:none;">
+          <div class="step-view active" id="step1">
+            <div class="path-badge" id="pathBadge" onclick="backToPathSelect()">&#127807; Ayurveda Treatment &amp; Wellness &middot; change</div>
+            <h2 id="step1Heading">Your Health Profile</h2>
+            <div class="step-sub" id="step1Sub">Tell us why you're seeking treatment.</div>
+            <div class="field"><label id="conditionLabel">Presenting condition / reason for visit</label>
+              <select id="condition"></select>
+            </div>
+            <div class="field" style="margin-top:-8px;">
+              <div class="symptom-row">
+                <input type="text" id="symptomText" placeholder="Describe your symptoms or reason for visit">
+                <button type="button" id="micBtn" class="mic-btn" onclick="toggleVoiceInput()" title="Speak instead of typing">&#127908;</button>
+                <button type="button" class="symptom-suggest-btn" onclick="suggestConditionFromSymptom()">Suggest</button>
+              </div>
+              <div id="voiceLangRow" style="display:flex; align-items:center; gap:6px; margin-top:8px; flex-wrap:wrap;">
+                <span style="font-size:0.72rem; color:var(--muted);">Speaking in:</span>
+                <button type="button" class="voice-lang-chip active" data-lang="en" onclick="setVoiceLang('en', this)">&#127468;&#127463; EN</button>
+                <button type="button" class="voice-lang-chip" data-lang="de" onclick="setVoiceLang('de', this)">&#127465;&#127466; DE</button>
+                <button type="button" class="voice-lang-chip" data-lang="ru" onclick="setVoiceLang('ru', this)">&#127479;&#127482; RU</button>
+                <button type="button" class="voice-lang-chip" data-lang="zh" onclick="setVoiceLang('zh', this)">&#127464;&#127475; ZH</button>
+                <button type="button" class="voice-lang-chip" data-lang="ja" onclick="setVoiceLang('ja', this)">&#127471;&#127477; JA</button>
+              </div>
+              <div id="symptomSuggestResult" style="font-size:0.78rem; margin-top:6px;"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label>Age</label><input type="number" id="age" value="45" min="18" max="90"></div>
+              <div class="field"><label>Gender</label><select id="gender"><option>F</option><option>M</option></select></div>
+            </div>
+            <div class="companion-toggle" id="companionToggle" onclick="toggleCompanion()">&#128101; Traveling with someone joining too? Add what they're looking for</div>
+            <div class="field" id="companionField" style="display:none;">
+              <label>Travel companion's condition</label>
+              <select id="companionCondition"></select>
+            </div>
+            <div class="btn-row">
+              <button class="secondary btn-back" onclick="backToPathSelect()">Back</button>
+              <button class="primary btn-next" onclick="goStep(2)">Continue</button>
+            </div>
+          </div>
+
+          <div class="step-view" id="step2">
+            <h2 id="step2Heading">Your Constitution</h2>
+            <div class="step-sub" id="step2Sub">Just tap the answer that sounds most like you &mdash; takes 30 seconds.</div>
+
+            <div id="doshaQuizQuestions">
+              <div class="quiz-q">
+                <label>How do you usually sleep?</label>
+                <div class="choice-grid" data-q="sleep">
+                  <button class="choice-card selected" data-val="Light/disturbed sleep" onclick="pickChoice('sleep', this)">Light sleeper, wake up easily</button>
+                  <button class="choice-card" data-val="Moderate sleep, wakes if hot" onclick="pickChoice('sleep', this)">Sleep okay, but get warm at night</button>
+                  <button class="choice-card" data-val="Deep/heavy sleep" onclick="pickChoice('sleep', this)">Deep, heavy sleeper</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>How's your appetite?</label>
+                <div class="choice-grid" data-q="appetite">
+                  <button class="choice-card selected" data-val="Variable appetite" onclick="pickChoice('appetite', this)">Varies a lot day to day</button>
+                  <button class="choice-card" data-val="Strong/sharp appetite" onclick="pickChoice('appetite', this)">Get hungry/irritable if I skip meals</button>
+                  <button class="choice-card" data-val="Slow digestion" onclick="pickChoice('appetite', this)">Steady, can skip meals easily</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>Temperature preference?</label>
+                <div class="choice-grid" data-q="sensitivity">
+                  <button class="choice-card selected" data-val="Sensitive to cold" onclick="pickChoice('sensitivity', this)">I feel the cold easily</button>
+                  <button class="choice-card" data-val="Sensitive to heat" onclick="pickChoice('sensitivity', this)">I feel the heat easily</button>
+                  <button class="choice-card" data-val="Tolerates temperature well" onclick="pickChoice('sensitivity', this)">Doesn't bother me much</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>Under stress, you tend to...</label>
+                <div class="choice-grid" data-q="emotion">
+                  <button class="choice-card selected" data-val="Anxious, overthinking" onclick="pickChoice('emotion', this)">Worry or overthink</button>
+                  <button class="choice-card" data-val="Irritable when unwell" onclick="pickChoice('emotion', this)">Get irritable or impatient</button>
+                  <button class="choice-card" data-val="Calm but sluggish" onclick="pickChoice('emotion', this)">Stay calm, need a push to act</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="spiritualQuizQuestions" style="display:none;">
+              <div class="quiz-q">
+                <label>Meditation experience?</label>
+                <div class="choice-grid" data-q="meditation_experience">
+                  <button class="choice-card selected" data-val="Complete beginner" onclick="pickChoice('meditation_experience', this)">Complete beginner</button>
+                  <button class="choice-card" data-val="Some experience" onclick="pickChoice('meditation_experience', this)">Practiced on and off</button>
+                  <button class="choice-card" data-val="Experienced practitioner" onclick="pickChoice('meditation_experience', this)">Regular, experienced practitioner</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>How intense a retreat are you looking for?</label>
+                <div class="choice-grid" data-q="retreat_intensity">
+                  <button class="choice-card selected" data-val="Gentle/relaxed" onclick="pickChoice('retreat_intensity', this)">Gentle, relaxed pace</button>
+                  <button class="choice-card" data-val="Structured" onclick="pickChoice('retreat_intensity', this)">Structured daily schedule</button>
+                  <button class="choice-card" data-val="Intensive" onclick="pickChoice('retreat_intensity', this)">Intensive, immersive practice</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>How do you feel about silence?</label>
+                <div class="choice-grid" data-q="silence_tolerance">
+                  <button class="choice-card selected" data-val="Prefer some conversation" onclick="pickChoice('silence_tolerance', this)">I'd like some conversation/community</button>
+                  <button class="choice-card" data-val="Comfortable with quiet" onclick="pickChoice('silence_tolerance', this)">Comfortable with quiet periods</button>
+                  <button class="choice-card" data-val="Seeking full silence" onclick="pickChoice('silence_tolerance', this)">Seeking a fully silent retreat</button>
+                </div>
+              </div>
+
+              <div class="quiz-q">
+                <label>Preferred retreat length?</label>
+                <div class="choice-grid" data-q="retreat_duration">
+                  <button class="choice-card selected" data-val="Short (1-3 days)" onclick="pickChoice('retreat_duration', this)">Short (1&ndash;3 days)</button>
+                  <button class="choice-card" data-val="Medium (4-10 days)" onclick="pickChoice('retreat_duration', this)">Medium (4&ndash;10 days)</button>
+                  <button class="choice-card" data-val="Extended (10+ days)" onclick="pickChoice('retreat_duration', this)">Extended (10+ days)</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <button class="secondary btn-back" onclick="goStep(1)">Back</button>
+              <button class="primary btn-next" onclick="goStep(3)">Continue</button>
+            </div>
+          </div>
+
+          <div class="step-view" id="step3">
+            <h2>Trip Preferences</h2>
+            <div class="step-sub">One last thing before we find your match.</div>
+            <div class="field"><label>Budget tier</label>
+              <select id="budget"><option>Budget</option><option selected>Mid</option><option>Premium</option></select>
+            </div>
+            <div class="btn-row">
+              <button class="secondary btn-back" onclick="goStep(2)">Back</button>
+              <button class="primary btn-next" id="findMatchBtn" onclick="runMatch()">Find My Match</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsWrap"></div>
+      <div id="detailView"></div>
+      <div id="browseView"></div>
+      <div id="mapView"></div>
+      <div id="costView"></div>
+      <div id="languageView"></div>
+      <div id="scenarioView"></div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="tc-dash-foot">
+  <div class="tc-dash-wrap tc-dash-grid">
+    <div class="tc-dash-brand-col">
+      <a class="tc-dash-brand" href="http://127.0.0.1:5000/#/home"><img src="images/tourceylon-logo.png" alt="">TourCeylon</a>
+      <p>Explore Sri Lanka's cultural and natural heritage with our curated journeys.</p>
+    </div>
+    <div class="tc-dash-col">
+      <h3>Quick Links</h3>
+      <a href="http://127.0.0.1:5000/#/home">About Us</a>
+      <a href="mailto:info@tourceylon.com">Contact</a>
+      <a href="http://127.0.0.1:5000/#/home">Terms</a>
+      <a href="http://127.0.0.1:5000/#/home">Privacy</a>
+    </div>
+    <div class="tc-dash-col">
+      <h3>Experience Lanka</h3>
+      <a href="http://127.0.0.1:5000/#/home">Sigiriya Tours</a>
+      <a href="http://127.0.0.1:5000/#/itinerary/plan">Beach Stays</a>
+      <a href="http://127.0.0.1:5000/#/home">Cultural Festivals</a>
+    </div>
+    <div class="tc-dash-col">
+      <h3>Stay Connected</h3>
+      <div class="tc-dash-socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-5 3.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.2 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12.2s0-3.2-.4-4.6a3 3 0 0 0-2.1-2.1C18.9 5 12 5 12 5s-6.9 0-8.5.5a3 3 0 0 0-2.1 2.1C1 9 1 12.2 1 12.2s0 3.2.4 4.6a3 3 0 0 0 2.1 2.1C5.1 19.4 12 19.4 12 19.4s6.9 0 8.5-.5a3 3 0 0 0 2.1-2.1c.4-1.4.4-4.6.4-4.6zM9.8 15.5v-6.6l6.2 3.3z"/></svg></a>
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.2l3.3 4.6L15.6 4H20l-6.2 7.4L20.4 20h-4.2l-3.6-5L8.2 20H4l6.6-7.8z"/></svg></a>
+      </div>
+      <div class="tc-dash-contact">Email: <a href="mailto:info@tourceylon.com">info@tourceylon.com</a><br>Phone: <a href="tel:+9411234567">+94 112 34567</a></div>
+    </div>
+  </div>
+  <div class="tc-dash-bar-bottom">© 2024 TourCeylon · Plan with Purpose. Explore with Peace.</div>
+</footer>
+<a class="tc-dash-sos" href="http://127.0.0.1:5000/#/sos" aria-label="Open SOS"><span>SOS</span></a>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+Flask-JWT-Extended==4.6.0
+Flask-CORS==4.0.1
+Flask-Migrate==4.0.7
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+Werkzeug==3.0.3
+cryptography==42.0.8
+SQLAlchemy==2.0.32
+pandas==2.2.2
+scikit-learn==1.5.1
+openpyxl==3.1.5
+reportlab==4.2.2
+Pillow==10.4.0
+openai==1.40.0
+google-auth==2.34.0
+requests==2.32.3
+gunicorn==22.0.0
+# Optional explainability for /api/risk/explain
+# shap==0.45.1
+# Optional (travel PDF); skip if install fails on Windows
+# weasyprint==62.3

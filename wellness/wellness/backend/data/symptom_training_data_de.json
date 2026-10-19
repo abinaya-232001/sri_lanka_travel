@@ -1,0 +1,438 @@
+[
+  [
+    "Meine Knie und Finger schmerzen, besonders morgens, und ich kann sie am Anfang kaum bewegen",
+    "Arthritis"
+  ],
+  [
+    "Ich habe Gelenksteifheit, die im Laufe des Tages etwas besser wird, aber der Schmerz geht nie ganz weg",
+    "Arthritis"
+  ],
+  [
+    "Meine Hände sind geschwollen und schmerzen, das geht schon seit Monaten so und wird schlimmer",
+    "Arthritis"
+  ],
+  [
+    "Die Gelenke in meinen Knien schmerzen beim Treppensteigen, fühlen sich steif und geschwollen an",
+    "Arthritis"
+  ],
+  [
+    "Meine Fingergelenke sind geschwollen und schmerzen, wenn ich versuche etwas zu greifen",
+    "Arthritis"
+  ],
+  [
+    "Ich habe chronische Gelenkschmerzen, die bei kaltem Wetter schlimmer werden",
+    "Arthritis"
+  ],
+  [
+    "Meine Handgelenke schmerzen und fühlen sich steif an, besonders nach dem Ausruhen",
+    "Arthritis"
+  ],
+  [
+    "Der Schmerz in meinen Hüften macht das Gehen an manchen Morgen schwierig",
+    "Arthritis"
+  ],
+  [
+    "Meine Gelenke knacken und schmerzen, es wird über die Jahre immer schlimmer",
+    "Arthritis"
+  ],
+  [
+    "Ich habe mir vor einiger Zeit die Schulter verdreht und sie schmerzt immer noch, wenn ich den Arm hebe",
+    "Joint Pain"
+  ],
+  [
+    "Mein Ellbogen tut seit ein paar Wochen weh, ich weiß nicht genau warum",
+    "Joint Pain"
+  ],
+  [
+    "Allgemeine Schmerzen in meinen Gelenken, nichts Bestimmtes, einfach ein allgemeines Unbehagen bei Bewegung",
+    "Joint Pain"
+  ],
+  [
+    "Mein Knöchel schmerzt seit ich ihn vor einiger Zeit verstaucht habe",
+    "Joint Pain"
+  ],
+  [
+    "Ich habe gelegentliche Hüftschmerzen, wenn ich zu lange sitze",
+    "Joint Pain"
+  ],
+  [
+    "Es gibt einen dumpfen Schmerz in meinem Handgelenk, der kommt und geht",
+    "Joint Pain"
+  ],
+  [
+    "Mein Knie tut nach dem Training etwas weh, nichts allzu Ernstes",
+    "Joint Pain"
+  ],
+  [
+    "Ich habe eine Schmerzhaftigkeit in meiner Schulter, die nicht weggeht",
+    "Joint Pain"
+  ],
+  [
+    "Ein scharfer, stechender Schmerz zieht mein Bein hinunter vom unteren Rücken, wird schlimmer wenn ich lange sitze",
+    "Sciatica"
+  ],
+  [
+    "Ich habe einen ausstrahlenden Schmerz, der im unteren Rücken beginnt und bis zum Fuß hinunterzieht",
+    "Sciatica"
+  ],
+  [
+    "Taubheit und Kribbeln in einem Bein, schlimmer wenn ich länger stehe",
+    "Sciatica"
+  ],
+  [
+    "Es gibt ein brennendes Gefühl, das von meiner Hüfte bis zur Wade zieht",
+    "Sciatica"
+  ],
+  [
+    "Mein Bein fühlt sich schwach und kribbelig an, beginnend am unteren Rücken",
+    "Sciatica"
+  ],
+  [
+    "Ich bekomme scharfe Schmerzstöße im Bein, wenn ich huste oder niese",
+    "Sciatica"
+  ],
+  [
+    "Langes Sitzen macht den Schmerz in meinem Bein unerträglich",
+    "Sciatica"
+  ],
+  [
+    "Ich habe einen stechenden Schmerz, der vom Rücken bis zu den Zehen zieht",
+    "Sciatica"
+  ],
+  [
+    "Mein unterer Rücken ist wirklich wund, besonders nach langen Flügen",
+    "Back Pain"
+  ],
+  [
+    "Ständiger dumpfer Schmerz über den ganzen Rücken, schwer sich zu bücken oder vom Sitzen aufzustehen",
+    "Back Pain"
+  ],
+  [
+    "Ich habe mir beim Heben von etwas Schwerem den Rücken verzerrt und es ist immer noch nicht ganz verheilt",
+    "Back Pain"
+  ],
+  [
+    "Ich habe mir bei der Gartenarbeit den Rücken verrenkt und er ist nicht richtig verheilt",
+    "Back Pain"
+  ],
+  [
+    "Mein oberer Rücken fühlt sich verspannt und wund an, besonders nach einem Tag am Schreibtisch",
+    "Back Pain"
+  ],
+  [
+    "Ich habe chronische Rückenschmerzen im unteren Rücken, die zufällig aufflammen",
+    "Back Pain"
+  ],
+  [
+    "Mein Rücken schmerzt, wenn ich zu lange stehe",
+    "Back Pain"
+  ],
+  [
+    "Es gibt einen anhaltenden Schmerz entlang meiner Wirbelsäule",
+    "Back Pain"
+  ],
+  [
+    "Ich fühle mich wirklich überfordert und kann einfach nicht entspannen, mein Kopf rast ständig",
+    "Stress"
+  ],
+  [
+    "Die Arbeit war in letzter Zeit so stressig, ich fühle mich ständig angespannt und kann nicht abschalten",
+    "Stress"
+  ],
+  [
+    "Ich brauche etwas, um mich zu entspannen, alles fühlt sich gerade zu viel an",
+    "Stress"
+  ],
+  [
+    "Ich kann meinen Kopf nicht abschalten, alles fühlt sich in letzter Zeit überwältigend an",
+    "Stress"
+  ],
+  [
+    "Ich habe Schwierigkeiten beim Schlafen wegen des Arbeitsdrucks",
+    "Stress"
+  ],
+  [
+    "Meine Schultern sind immer verspannt und ich fühle mich ständig erschöpft",
+    "Stress"
+  ],
+  [
+    "Ich brauche eine Pause, ich laufe seit Wochen auf Reserve",
+    "Stress"
+  ],
+  [
+    "Gerade fühlt sich alles zu viel an, ich möchte einfach nur entspannen",
+    "Stress"
+  ],
+  [
+    "Ich habe dieses ständige nervöse Gefühl in der Brust und kann nicht aufhören mir Sorgen zu machen",
+    "Anxiety"
+  ],
+  [
+    "Mein Herz rast ohne Grund und ich fühle mich den ganzen Tag ängstlich",
+    "Anxiety"
+  ],
+  [
+    "Ich habe Schwierigkeiten beim Einschlafen, weil meine Gedanken nicht zur Ruhe kommen, fühlt sich wie Angst an",
+    "Anxiety"
+  ],
+  [
+    "Ich fühle mich die meiste Zeit unruhig und angespannt, auch wenn nichts falsch ist",
+    "Anxiety"
+  ],
+  [
+    "Meine Hände zittern manchmal, wenn ich nervös bin, sogar bei Kleinigkeiten",
+    "Anxiety"
+  ],
+  [
+    "Ich habe dieses ständige Gefühl der Angst, das ich nicht erklären kann",
+    "Anxiety"
+  ],
+  [
+    "Meine Brust fühlt sich eng an und ich kämpfe manchmal mit dem Atmen, wenn ich ängstlich bin",
+    "Anxiety"
+  ],
+  [
+    "Ich denke über alles zu viel nach und es ist erschöpfend",
+    "Anxiety"
+  ],
+  [
+    "Mein Arzt hat erwähnt, dass meine Leberwerte bei meinem letzten Bluttest erhöht waren",
+    "Liver Disease"
+  ],
+  [
+    "Ich hatte schon einmal Gelbsucht und möchte meine Lebergesundheit während meines Aufenthalts unterstützen",
+    "Liver Disease"
+  ],
+  [
+    "Ich fühle mich müde und habe ein leichtes Unbehagen unter den rechten Rippen, vielleicht Leberprobleme",
+    "Liver Disease"
+  ],
+  [
+    "Ich habe bemerkt, dass meine Haut leicht gelb aussieht und möchte das untersuchen lassen",
+    "Liver Disease"
+  ],
+  [
+    "Mein Arzt empfahl, meine Leber nach einigen abnormalen Testergebnissen zu unterstützen",
+    "Liver Disease"
+  ],
+  [
+    "Mir wird übel nach fettigem Essen, möglicherweise Leberprobleme",
+    "Liver Disease"
+  ],
+  [
+    "Ich habe eine familiäre Vorgeschichte von Leberproblemen und möchte einen vorbeugenden Wellnessplan",
+    "Liver Disease"
+  ],
+  [
+    "Ich fühle mich ungewöhnlich müde und mein Appetit hat abgenommen",
+    "Liver Disease"
+  ],
+  [
+    "Mein Blutdruck ist schon eine Weile hoch und ich nehme Medikamente dagegen",
+    "Hypertension"
+  ],
+  [
+    "Ich bekomme häufig Kopfschmerzen und mein Arzt sagte, es könnte mit hohem Blutdruck zusammenhängen",
+    "Hypertension"
+  ],
+  [
+    "Ich versuche meinen Bluthochdruck natürlich zu behandeln, zusätzlich zu meiner regulären Medikation",
+    "Hypertension"
+  ],
+  [
+    "Mir wird manchmal schwindelig und mein Arzt meinte, es könnte mit dem Blutdruck zusammenhängen",
+    "Hypertension"
+  ],
+  [
+    "Meine Blutdruckwerte waren zu Hause konstant hoch",
+    "Hypertension"
+  ],
+  [
+    "Ich habe gelegentlich Brustenge, die mein Arzt mit Bluthochdruck in Verbindung gebracht hat",
+    "Hypertension"
+  ],
+  [
+    "Ich möchte meine Blutdruckmedikation mit natürlicher Behandlung ergänzen",
+    "Hypertension"
+  ],
+  [
+    "Mir wurde gesagt, ich solle wegen hohem Blutdruck auf meinen Salzkonsum achten",
+    "Hypertension"
+  ],
+  [
+    "Ich möchte eine richtige Entgiftung machen, ich fühle mich träge und möchte mein System zurücksetzen",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich möchte etwas abnehmen und meinen Körper nach Monaten schlechter Ernährung reinigen",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich fühle mich ständig aufgebläht und schwer, ich möchte ein richtiges Reinigungsprogramm",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich habe kürzlich zugenommen und möchte ein strukturiertes Programm, um es zu verlieren",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich fühle mich ständig träge und denke, mein Körper braucht eine richtige Reinigung",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich möchte meinen Stoffwechsel nach Monaten ungesunder Gewohnheiten zurücksetzen",
+    "Detox / Weight Management"
+  ],
+  [
+    "Meine Verdauung fühlt sich nicht richtig an und ich denke, eine Entgiftung würde helfen",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich suche ein Abnehmprogramm kombiniert mit traditionellen Behandlungen",
+    "Detox / Weight Management"
+  ],
+  [
+    "Nichts Bestimmtes ist falsch, ich möchte nur eine entspannende Wellness-Erfahrung während meines Urlaubs",
+    "General Wellness"
+  ],
+  [
+    "Ich bin allgemein gesund, möchte aber ein authentisches Ayurveda-Wellnesspaket ausprobieren",
+    "General Wellness"
+  ],
+  [
+    "Ich suche einfach nach etwas Erholung und Entspannung, kein bestimmtes medizinisches Problem",
+    "General Wellness"
+  ],
+  [
+    "Ich habe keine bestimmten Beschwerden, möchte mich nur insgesamt ausgeglichener fühlen",
+    "General Wellness"
+  ],
+  [
+    "Ich bin neugierig auf Ayurveda und möchte einen allgemeinen Wellness-Check",
+    "General Wellness"
+  ],
+  [
+    "Ich möchte meine Gesundheit im Urlaub erhalten, nichts Bestimmtes stört mich",
+    "General Wellness"
+  ],
+  [
+    "Ich suche eine entspannende Erfahrung, um mich während meiner Reise zu erholen",
+    "General Wellness"
+  ],
+  [
+    "Ich bin einfach daran interessiert, traditionelle Wellness-Behandlungen auszuprobieren, während ich hier bin",
+    "General Wellness"
+  ],
+  [
+    "Ich bekomme starke Kopfschmerzen mit Lichtempfindlichkeit und manchmal Übelkeit, ich glaube Migräne",
+    "Migraine"
+  ],
+  [
+    "Wiederkehrende Kopfschmerzen auf einer Seite meines Kopfes, die einen ganzen Tag dauern können",
+    "Migraine"
+  ],
+  [
+    "Meine Migräne wird häufiger, ich suche nach einer natürlichen Behandlung",
+    "Migraine"
+  ],
+  [
+    "Mein Kopf schmerzt",
+    "Migraine"
+  ],
+  [
+    "Ich habe Kopfschmerzen",
+    "Migraine"
+  ],
+  [
+    "Mein Kopf pocht schon den ganzen Tag",
+    "Migraine"
+  ],
+  [
+    "Ich bekomme schlimme Kopfschmerzen, die mich lichtempfindlich machen",
+    "Migraine"
+  ],
+  [
+    "Starke Kopfschmerzen auf einer Seite meines Kopfes",
+    "Migraine"
+  ],
+  [
+    "Mein Kopf pocht und mir ist übel",
+    "Migraine"
+  ],
+  [
+    "Ich habe einen anhaltenden Hautausschlag, der nicht weggeht, juckende und rote Flecken",
+    "Skin Condition"
+  ],
+  [
+    "Ich habe mit Ekzemschüben zu kämpfen, meine Haut wird wirklich trocken und gereizt",
+    "Skin Condition"
+  ],
+  [
+    "Ich habe Schuppenflechte und möchte ayurvedische Behandlung für meine Haut ausprobieren",
+    "Skin Condition"
+  ],
+  [
+    "Ich habe rote, juckende Flecken auf meinen Armen, die nicht weggehen",
+    "Skin Condition"
+  ],
+  [
+    "Meine Haut bekommt manchmal Nesselsucht ohne erkennbaren Grund",
+    "Skin Condition"
+  ],
+  [
+    "Ich habe chronisch trockene Haut, die in bestimmten Jahreszeiten schlimmer wird",
+    "Skin Condition"
+  ],
+  [
+    "Es gibt einen Ausschlag an meinen Beinen, der mich seit Wochen stört",
+    "Skin Condition"
+  ],
+  [
+    "Ich möchte eine Behandlung für Akne, die nicht auf normale Produkte reagiert hat",
+    "Skin Condition"
+  ],
+  [
+    "Mein Knie schmerzt",
+    "Arthritis"
+  ],
+  [
+    "Meine Schulter schmerzt",
+    "Joint Pain"
+  ],
+  [
+    "Mein Bein schmerzt",
+    "Sciatica"
+  ],
+  [
+    "Mein Rücken schmerzt",
+    "Back Pain"
+  ],
+  [
+    "Ich fühle mich gestresst",
+    "Stress"
+  ],
+  [
+    "Ich fühle mich ängstlich",
+    "Anxiety"
+  ],
+  [
+    "Meine Leber schmerzt",
+    "Liver Disease"
+  ],
+  [
+    "Mein Blutdruck ist hoch",
+    "Hypertension"
+  ],
+  [
+    "Ich möchte entgiften",
+    "Detox / Weight Management"
+  ],
+  [
+    "Ich möchte entspannen",
+    "General Wellness"
+  ],
+  [
+    "Meine Haut juckt",
+    "Skin Condition"
+  ]
+]

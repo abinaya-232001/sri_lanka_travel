@@ -1,0 +1,89 @@
+/* WhatsApp-style fixed tiles — every voice note and photo is the same physical size. */
+
+.sos-voice-note {
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+  height: 52px !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(8, 32, 38, 0.07);
+  flex-shrink: 0;
+}
+
+.sos-voice-note audio {
+  display: none;
+}
+
+.sos-voice-note-play {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #0a4a52;
+  color: #fff;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.sos-voice-note-play:focus-visible {
+  outline: 2px solid #2eb8c4;
+  outline-offset: 2px;
+}
+
+.sos-voice-note-wave {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  flex: none !important;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.sos-voice-note-wave span {
+  width: 3px;
+  border-radius: 2px;
+  background: #0a4a52;
+  display: block;
+  flex-shrink: 0;
+}
+
+.sos-voice-note-time {
+  width: 36px;
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: #667781;
+  text-align: right;
+}
+
+.sos-chat-photo-link {
+  display: block;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: #d8e4e8;
+}
+
+.sos-chat-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+}
+

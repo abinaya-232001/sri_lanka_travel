@@ -1,0 +1,2 @@
+-- Optional manual seed placeholder (use scripts/seed_data.py instead)
+-- Reference tables are populated from Excel via scripts/seed_data.py

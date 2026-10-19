@@ -1,0 +1,20 @@
+{
+  "name": "tour-ceylon-frontend",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Run Itinerary + Tourist SOS + Police + Wellness + Live Data frontends together",
+  "scripts": {
+    "dev": "node scripts/free-dev-ports.js && concurrently -n travel,tourist,police,wellness,livedata -c cyan,magenta,yellow,green,blue \"npm run dev --prefix itinerary/frontend\" \"npm run dev --prefix sos/frontend/tourist\" \"npm run dev --prefix sos/frontend/police\" \"npm run dev --prefix wellness/frontend\" \"npm run dev --prefix risk-management/frontend\"",
+    "dev:travel": "npm run dev --prefix itinerary/frontend",
+    "dev:itinerary": "npm run dev --prefix itinerary/frontend",
+    "dev:tourist": "npm run dev --prefix sos/frontend/tourist",
+    "dev:police": "npm run dev --prefix sos/frontend/police",
+    "dev:wellness": "npm run dev --prefix wellness/frontend",
+    "dev:livedata": "npm run dev --prefix risk-management/frontend",
+    "install:all": "npm install --prefix itinerary/frontend && npm install --prefix sos/frontend/tourist && npm install --prefix sos/frontend/police && npm install --prefix wellness/frontend && npm install --prefix risk-management/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

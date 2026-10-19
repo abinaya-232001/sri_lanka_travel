@@ -1,0 +1,33 @@
+{
+  "model_type": "Random Forest",
+  "metrics_basis": "site-holdout (10 unseen destinations)",
+  "n_estimators": 50,
+  "max_depth": 12,
+  "min_samples_split": 7,
+  "features_used": 16,
+  "train_records": 136697,
+  "test_records": 7310,
+  "mae": 0.1232,
+  "r2": 0.3331,
+  "accuracy": 0.7731,
+  "balanced_accuracy": 0.5754,
+  "baseline_mae": 0.2835,
+  "baseline_r2": -0.3476,
+  "cv_mae": 0.1159,
+  "cv_mae_std": 0.0133,
+  "cv_r2": 0.5071,
+  "cv_r2_std": 0.109,
+  "cv_basis": "site-grouped CV, 197 sites, 5 folds x 3 repeats",
+  "random_split_r2_optimistic": 0.8492,
+  "random_split_mae_optimistic": 0.0679,
+  "target_is_synthetic": true,
+  "metric_labels": {
+    "mae": "site-holdout",
+    "r2": "site-holdout",
+    "accuracy": "site-holdout",
+    "cv_mae": "site-grouped CV",
+    "cv_r2": "site-grouped CV"
+  },
+  "full_details_file": "models/model_metadata.json",
+  "training_timestamp": "2026-10-03T12:22:41.766524"
+}

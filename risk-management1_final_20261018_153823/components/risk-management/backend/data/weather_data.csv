@@ -1,0 +1,21 @@
+site_name,latitude,longitude,temperature_c,humidity_percent,weather_description,wind_speed_ms,rainfall_mm,timestamp
+Sigiriya,7.957,80.7603,33.94,43,overcast clouds,2.1,0,2026-04-04 13:32:01.267643
+Galle Fort,6.0328,80.2168,29.17,66,overcast clouds,3.52,0,2026-04-04 13:32:02.567813
+Kandy Temple,7.2936,80.6413,27.91,66,overcast clouds,1.47,0,2026-04-04 13:32:04.002713
+Mirissa Beach,5.9483,80.4716,30.23,62,overcast clouds,3.4,0,2026-04-04 13:32:05.744376
+Yala National Park,6.3728,81.5216,29.19,70,overcast clouds,4.91,0,2026-04-04 13:32:07.595582
+Anuradhapura,8.3114,80.4037,37.02,35,overcast clouds,2.46,0,2026-04-04 13:32:08.847469
+Ella,6.8667,81.0466,24.55,64,overcast clouds,1.07,0,2026-04-04 13:32:10.454871
+Nuwara Eliya,6.9497,80.7891,17.81,76,overcast clouds,2.09,0,2026-04-04 13:32:11.988514
+Dambulla,7.8568,80.6487,33.98,45,overcast clouds,2.43,0,2026-04-04 13:32:13.170850
+Horton Plains,6.8016,80.8044,16.67,75,overcast clouds,0.9,0,2026-04-04 13:32:14.451086
+Polonnaruwa,7.9403,81.0188,34.09,44,overcast clouds,1.59,0,2026-04-04 13:32:15.768683
+Arugam Bay,6.8397,81.831,29.1,70,overcast clouds,4.11,0,2026-04-04 13:32:17.192612
+Pinnawala,7.3006,80.3498,32.09,56,overcast clouds,2.74,0,2026-04-04 13:32:18.692434
+Adams Peak,6.8096,80.4994,18.37,76,overcast clouds,2.17,0,2026-04-04 13:32:20.076007
+Trincomalee,8.5922,81.2152,29.35,67,overcast clouds,4.28,0,2026-04-04 13:32:21.510823
+Bentota,6.4239,79.9958,29.48,66,overcast clouds,4.03,0,2026-04-04 13:32:22.944343
+Hikkaduwa,6.1395,80.1063,29.46,66,overcast clouds,3.57,0,2026-04-04 13:32:24.480596
+Wilpattu,8.4557,80.0148,33.68,49,overcast clouds,4.73,0,2026-04-04 13:32:25.954160
+Colombo Museum,6.902,79.8612,28.81,71,overcast clouds,3.88,0,2026-04-04 13:32:27.654460
+Pidurangala,7.9667,80.75,33.9,43,overcast clouds,2.02,0,2026-04-04 13:32:29.287392

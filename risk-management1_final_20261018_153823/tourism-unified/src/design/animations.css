@@ -1,0 +1,27 @@
+﻿@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.sj-skeleton {
+  background: linear-gradient(90deg, #1B1E24 0%, #23262D 50%, #1B1E24 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #08090B; }
+::-webkit-scrollbar-thumb { background: #2A2D33; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #3A3D45; }

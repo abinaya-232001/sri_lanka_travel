@@ -1,0 +1,7 @@
+flask
+pandas
+scikit-learn==1.8.0
+openpyxl
+numpy
+psycopg2-binary
+python-dotenv

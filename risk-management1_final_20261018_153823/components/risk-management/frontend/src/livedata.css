@@ -1,0 +1,137 @@
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Colors follow the TourCeylon dashboard only when this app is embedded in it. */
+body.ld-embed {
+  background: #F4F1EC !important;
+  --bg: #F4F1EC;
+  --bg-gradient: #F4F1EC;
+  --surface: #FFFFFF;
+  --surface-alt: #F6F3EE;
+  --border: #E7E1D8;
+  --border-strong: #D5CBBE;
+  --text-primary: #1C1917;
+  --text-secondary: #6B625A;
+  --text-tertiary: #6B625A;
+  --accent: #BF7E46;
+  --accent-bright: #A86B35;
+  --accent-soft: #FDECD8;
+  --accent-border: rgba(191, 126, 70, 0.35);
+  --warm: #BF7E46;
+  --warm-soft: #FDECD8;
+  --warm-border: rgba(191, 126, 70, 0.35);
+  --danger: #9B3B32;
+  --danger-soft: #FBE4E0;
+  --danger-border: rgba(155, 59, 50, 0.3);
+}
+
+body {
+  background: #F4F1EC;
+  color: #1C1917;
+  font-family: Figtree, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.tc-site:has(.ld-subnav) {
+  background-color: transparent;
+  isolation: isolate;
+}
+
+.tc-site:has(.ld-subnav)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10, 28, 22, 0.38) 0%, rgba(10, 28, 22, 0.22) 48%, rgba(10, 28, 22, 0.42) 100%),
+    url('/Sri-Lanka-tourism.jpg') center / cover no-repeat;
+}
+
+.ld-app-shell,
+.ld-app-shell > div {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+  min-height: 100%;
+}
+
+.ld-read-panel {
+  background: #fff;
+  border: 1px solid #E7E1D8;
+  border-radius: 14px;
+  padding: 36px 32px 28px;
+  box-shadow: 0 1px 2px rgba(28, 25, 23, 0.06), 0 8px 24px rgba(28, 25, 23, 0.04);
+  color: #1C1917;
+}
+
+.ld-read-panel--tight {
+  padding: 16px 22px;
+  border-radius: 14px;
+}
+
+.ld-ghost-btn {
+  background: #ffffff !important;
+  color: #1C1917 !important;
+  border: 1px solid #E7E1D8 !important;
+}
+
+.ld-ghost-btn:hover {
+  background: #eef7f6 !important;
+}
+
+@media (max-width: 640px) {
+  .ld-read-panel {
+    padding: 24px 18px 20px;
+    border-radius: 16px;
+  }
+}
+
+.ld-subnav {
+  background: #083c42;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(10, 74, 82, 0.18);
+}
+
+.ld-subnav-inner {
+  display: flex;
+  gap: 0.15rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.ld-subtab {
+  flex: 0 0 auto;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ld-subtab:hover {
+  color: var(--sand, #e8d5a3);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ld-subtab.is-active {
+  color: #fff;
+  border-bottom-color: var(--teal, #2eb8c4);
+  background: rgba(46, 184, 196, 0.22);
+}
+
+@media (max-width: 640px) {
+  .ld-subtab {
+    padding: 0.75rem 0.8rem;
+    font-size: 0.72rem;
+  }
+}

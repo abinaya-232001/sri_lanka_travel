@@ -1,0 +1,191 @@
+"""Writes data/places_gazetteer.xlsx : Sri Lankan towns with approximate coordinates.
+This is reference DATA (like a map), used to measure distance between attractions and hotels.
+Edit / extend the Excel file to improve location matching; no code changes needed."""
+import pandas as pd
+P = """Colombo|6.9271|79.8612|Colombo 01;Colombo 02;Colombo 03;Colombo 04;Colombo 05;Colombo 06;Colombo 07;Colombo 08;Colombo 10;Colombo 11;Colombo 8;Colombo 5
+Dehiwala|6.8511|79.8659|Dehiwala-Mount Lavinia
+Mount Lavinia|6.8390|79.8650|Mt Lavinia;Mt. Lavinia;Mt.Lavinia;Mt.Laviniya
+Moratuwa|6.7730|79.8816|
+Ratmalana|6.8200|79.8800|
+Kotte|6.8868|79.9187|Sri Jayawardenapura-Kotte;Sri Jayawardenapura
+Nawala|6.8930|79.8890|
+Rajagiriya|6.9100|79.8950|
+Battaramulla|6.9000|79.9180|
+Maharagama|6.8480|79.9260|
+Boralesgamuwa|6.8410|79.9010|
+Piliyandala|6.8018|79.9227|
+Kesbewa|6.7960|79.9420|
+Homagama|6.8440|80.0020|
+Padukka|6.8400|80.0900|
+Kaduwela|6.9330|79.9840|
+Athurugiriya|6.8780|79.9900|
+Hanwella|6.9010|80.0850|
+Kelaniya|6.9553|79.9220|
+Kiribathgoda|6.9780|79.9290|
+Wattala|6.9890|79.8920|
+Ragama|7.0300|79.9220|
+Kadawatha|7.0010|79.9530|
+Biyagama|6.9420|79.9850|Malwana;Malawana
+Gampaha|7.0917|79.9999|
+Ja-Ela|7.0750|79.8920|Ja Ela
+Seeduwa|7.1270|79.8800|
+Katunayake|7.1700|79.8840|Bandaranaike International Airport;Airport
+Negombo|7.2083|79.8358|Negambo
+Kochchikade|7.2600|79.8540|
+Waikkal|7.2800|79.8550|Waikkala
+Katana|7.2500|79.9000|
+Minuwangoda|7.1700|79.9500|
+Kotugoda|7.1200|79.9300|
+Pamunugama|7.0900|79.8400|
+Veyangoda|7.1530|80.0960|
+Nittambuwa|7.1440|80.0950|
+Mirigama|7.2410|80.1330|
+Marawila|7.4100|79.8300|
+Wennappuwa|7.3490|79.8510|
+Nattandiya|7.4100|79.8700|
+Madampe|7.4900|79.8400|
+Iranawila|7.5100|79.8000|
+Chilaw|7.5758|79.7953|
+Puttalam|8.0362|79.8283|
+Kalpitiya|8.2333|79.7667|
+Kurunegala|7.4863|80.3647|Kurunagela
+Narammala|7.4320|80.2110|
+Pannala|7.3290|80.0230|
+Giriulla|7.3300|80.1200|
+Alawwa|7.2930|80.2380|
+Nikaweratiya|7.7480|80.1150|
+Kalutara|6.5854|79.9607|Kaluthara;Kalutara South;Kalutara North
+Panadura|6.7130|79.9040|
+Wadduwa|6.6670|79.9250|
+Bandaragama|6.7140|79.9880|
+Horana|6.7150|80.0630|
+Mathugama|6.5220|80.1140|
+Beruwala|6.4789|79.9828|Beruwela
+Aluthgama|6.4340|80.0000|Dharga Town;Dargatown;Darga Town
+Bentota|6.4210|80.0050|Benthota
+Induruwa|6.3780|80.0130|
+Kosgoda|6.3320|80.0300|
+Ahungalla|6.3150|80.0330|Ahungalle
+Balapitiya|6.2690|80.0370|
+Ambalangoda|6.2350|80.0540|
+Hikkaduwa|6.1395|80.1063|
+Dodanduwa|6.0960|80.1450|
+Rathgama|6.0950|80.1400|Ratgama
+Galle|6.0535|80.2210|Galle Fort
+Unawatuna|6.0100|80.2490|Unwatuna
+Habaraduwa|5.9950|80.3000|
+Thalpe|5.9970|80.2790|Talpe;Thallpe
+Koggala|5.9900|80.3200|
+Ahangama|5.9730|80.3620|
+Weligama|5.9750|80.4290|
+Mirissa|5.9483|80.4716|
+Kamburugamuwa|5.9430|80.4950|
+Polhena|5.9370|80.5300|
+Matara|5.9549|80.5550|
+Dickwella|5.9660|80.6970|Dikwella
+Tangalle|6.0240|80.7940|Tangalla
+Ranna|6.1000|80.8700|
+Ambalantota|6.1180|81.0270|
+Hambantota|6.1241|81.1185|Hambanthota
+Tissamaharama|6.2790|81.2870|Thissamaharama
+Yala|6.3720|81.5200|
+Kataragama|6.4130|81.3330|Katharagama;Sellakataragama;Sellakatharagama
+Sooriyawewa|6.3200|81.0000|
+Embilipitiya|6.3430|80.8490|
+Udawalawe|6.4740|80.8880|Udawalawa
+Deniyaya|6.3420|80.5600|
+Morawaka|6.2600|80.4800|
+Kamburupitiya|6.0770|80.5640|
+Beliatta|6.0480|80.7340|Beliattha
+Weeraketiya|6.1300|80.7800|
+Hungama|6.1060|80.9300|
+Mulgirigala|6.1200|80.7400|
+Thelwatta|6.1700|80.0900|Telwatta
+Karandeniya|6.2600|80.0700|
+Neluwa|6.3800|80.3600|
+Akmeemana|6.0870|80.2950|
+Ratnapura|6.6828|80.3992|Rathnapura
+Kuruwita|6.7770|80.3680|
+Eheliyagoda|6.8480|80.2650|Ehaliyagoda
+Belihuloya|6.7200|80.7700|
+Kegalle|7.2513|80.3464|
+Mawanella|7.2530|80.4470|
+Rambukkana|7.3240|80.3950|
+Yatiyantota|7.0300|80.3000|
+Warakapola|7.2270|80.1980|
+Aranayaka|7.1500|80.4600|
+Kandy|7.2906|80.6337|
+Peradeniya|7.2690|80.5940|
+Katugastota|7.3300|80.6230|Katugastota
+Kundasale|7.2800|80.6800|
+Ampitiya|7.2700|80.6600|
+Pilimathalawa|7.2690|80.5450|
+Kadugannawa|7.2540|80.5240|
+Gampola|7.1640|80.5770|
+Nawalapitiya|7.0550|80.5320|
+Galagedara|7.3700|80.5200|
+Polgolla|7.3200|80.6450|
+Hanthana|7.2600|80.6300|
+Gurudeniya|7.2800|80.6600|
+Matale|7.4675|80.6234|
+Galewela|7.7590|80.5680|
+Dambulla|7.8731|80.6511|
+Sigiriya|7.9570|80.7600|
+Kimbissa|7.9300|80.7400|
+Habarana|8.0350|80.7490|
+Giritale|7.9900|80.9300|
+Polonnaruwa|7.9403|81.0188|
+Hingurakgoda|8.0400|80.9500|
+Anuradhapura|8.3114|80.4037|
+Medawachchiya|8.5380|80.4950|
+Thambuttegama|8.1550|80.3000|Thambuththegama
+Nochchiyagama|8.2680|80.2050|
+Vavuniya|8.7514|80.4971|Vauniya
+Mannar|8.9810|79.9044|
+Jaffna|9.6615|80.0255|
+Chankanai|9.7500|79.9800|
+Vaddukoddai|9.7300|79.9700|
+Kilinochchi|9.3803|80.3770|Killinochchi
+Mullaitivu|9.2671|80.8142|Mullaithivu
+Puthukkudiyiruppu|9.3060|80.7010|Puthukudiyirippu
+Trincomalee|8.5874|81.2152|
+Nilaveli|8.6900|81.1900|
+Batticaloa|7.7310|81.6747|
+Kalkudah|7.9200|81.5600|Kalkuda
+Passikudah|7.9270|81.5570|Passikudha
+Kalmunai|7.4167|81.8167|
+Ampara|7.2833|81.6833|
+Akkaraipattu|7.2170|81.8500|
+Pottuvil|6.8760|81.8310|Pottuwil
+Arugam Bay|6.8400|81.8360|Arugambay
+Mahiyanganaya|7.3190|80.9890|Mahiyanaganaya
+Badulla|6.9934|81.0550|
+Bandarawela|6.8290|80.9870|
+Ella|6.8667|81.0466|
+Haputale|6.7680|80.9570|
+Welimada|6.9000|80.9130|
+Passara|6.9350|81.1530|
+Hali Ela|6.9600|81.0300|
+Demodara|6.8970|81.0570|
+Wellawaya|6.7370|81.1030|
+Monaragala|6.8720|81.3500|Moneragala
+Bibile|7.1600|81.2200|
+Siyambalanduwa|6.9000|81.5500|Siyabalanduwa
+Nuwara Eliya|6.9497|80.7891|Nuwaraeliya;Nuwaraelliya
+Hatton|6.8916|80.5955|
+Maskeliya|6.8330|80.5670|
+Talawakele|6.9370|80.6580|Thalawakele
+Bogawantalawa|6.7990|80.6800|Bogawanthlawa
+Norwood|6.8360|80.6150|
+Ramboda|7.0570|80.6970|
+Pattipola|6.8560|80.8300|
+Agarapatana|6.8500|80.6970|
+Lindula|6.9200|80.6900|
+Nallathanniya|6.8100|80.4900|
+Pussellawa|7.1120|80.6400|
+Madulkele|7.4000|80.7300|"""
+rows=[]
+for line in P.strip().splitlines():
+    n,la,lo,al=line.split('|'); rows.append({'Place':n,'Latitude':float(la),'Longitude':float(lo),'Aliases (;-separated)':al})
+pd.DataFrame(rows).to_excel('data/places_gazetteer.xlsx',index=False)
+print(len(rows))

@@ -1,0 +1,438 @@
+[
+  [
+    "My knees and fingers ache, especially in the morning, and it's hard to move them at first",
+    "Arthritis"
+  ],
+  [
+    "I have joint stiffness that gets a bit better as the day goes on but the pain never fully goes away",
+    "Arthritis"
+  ],
+  [
+    "My hands are swollen and painful, it's been going on for months and getting worse",
+    "Arthritis"
+  ],
+  [
+    "The joints in my knees hurt when I climb stairs, feels stiff and swollen",
+    "Arthritis"
+  ],
+  [
+    "My finger joints are swollen and hurt when I try to grip anything",
+    "Arthritis"
+  ],
+  [
+    "I have chronic joint pain that's worse in cold weather",
+    "Arthritis"
+  ],
+  [
+    "My wrists ache and feel stiff, especially after resting",
+    "Arthritis"
+  ],
+  [
+    "The pain in my hips makes it hard to walk some mornings",
+    "Arthritis"
+  ],
+  [
+    "My joints crack and hurt, it's been getting progressively worse over the years",
+    "Arthritis"
+  ],
+  [
+    "I twisted my shoulder a while back and it still hurts when I lift my arm",
+    "Joint Pain"
+  ],
+  [
+    "My elbow has been sore for a few weeks, not sure what caused it",
+    "Joint Pain"
+  ],
+  [
+    "General aching in my joints, nothing specific, just overall discomfort when moving",
+    "Joint Pain"
+  ],
+  [
+    "My ankle has been achy since I sprained it a while back",
+    "Joint Pain"
+  ],
+  [
+    "I feel occasional pain in my hip when I sit for too long",
+    "Joint Pain"
+  ],
+  [
+    "There's a dull ache in my wrist that comes and goes",
+    "Joint Pain"
+  ],
+  [
+    "My knee hurts a bit after exercising, nothing too serious",
+    "Joint Pain"
+  ],
+  [
+    "I have some soreness in my shoulder that isn't going away",
+    "Joint Pain"
+  ],
+  [
+    "Sharp shooting pain down my leg from my lower back, gets worse when I sit too long",
+    "Sciatica"
+  ],
+  [
+    "I have this radiating pain that starts in my lower back and goes all the way down to my foot",
+    "Sciatica"
+  ],
+  [
+    "Numbness and tingling down one leg, worse when I stand for a while",
+    "Sciatica"
+  ],
+  [
+    "There's a burning sensation that runs from my hip down to my calf",
+    "Sciatica"
+  ],
+  [
+    "My leg feels weak and tingly, starting from my lower back",
+    "Sciatica"
+  ],
+  [
+    "I get sharp jolts of pain down my leg when I cough or sneeze",
+    "Sciatica"
+  ],
+  [
+    "Sitting for long periods makes the pain in my leg unbearable",
+    "Sciatica"
+  ],
+  [
+    "I have this shooting pain that travels from my back down to my toes",
+    "Sciatica"
+  ],
+  [
+    "My lower back has been really sore, especially after long flights",
+    "Back Pain"
+  ],
+  [
+    "Constant dull ache across my back, harder to bend down or get up from sitting",
+    "Back Pain"
+  ],
+  [
+    "I strained my back lifting something heavy and it hasn't fully healed",
+    "Back Pain"
+  ],
+  [
+    "I threw my back out doing yard work and it hasn't healed properly",
+    "Back Pain"
+  ],
+  [
+    "My upper back feels tight and sore, especially after sitting at a desk all day",
+    "Back Pain"
+  ],
+  [
+    "I have chronic lower back pain that flares up randomly",
+    "Back Pain"
+  ],
+  [
+    "My back hurts when I stand for too long",
+    "Back Pain"
+  ],
+  [
+    "There's a persistent ache along my spine",
+    "Back Pain"
+  ],
+  [
+    "I've been feeling really overwhelmed and can't seem to relax, my mind is always racing",
+    "Stress"
+  ],
+  [
+    "Work has been so stressful lately, I feel tense all the time and can't switch off",
+    "Stress"
+  ],
+  [
+    "I need something to help me unwind, everything feels like too much right now",
+    "Stress"
+  ],
+  [
+    "I can't seem to switch off my mind, everything feels overwhelming lately",
+    "Stress"
+  ],
+  [
+    "I've been having trouble sleeping because of work pressure",
+    "Stress"
+  ],
+  [
+    "My shoulders are always tense and I feel exhausted all the time",
+    "Stress"
+  ],
+  [
+    "I need a break, I've been running on empty for weeks",
+    "Stress"
+  ],
+  [
+    "Everything feels like too much right now, I just want to relax",
+    "Stress"
+  ],
+  [
+    "I get this constant nervous feeling in my chest and can't stop worrying about things",
+    "Anxiety"
+  ],
+  [
+    "My heart races for no reason and I feel anxious most of the day",
+    "Anxiety"
+  ],
+  [
+    "I have trouble sleeping because my thoughts won't quiet down, feels like anxiety",
+    "Anxiety"
+  ],
+  [
+    "I feel restless and on edge most of the time, even when nothing is wrong",
+    "Anxiety"
+  ],
+  [
+    "My hands shake sometimes when I get nervous, even about small things",
+    "Anxiety"
+  ],
+  [
+    "I have this constant feeling of dread that I can't explain",
+    "Anxiety"
+  ],
+  [
+    "My chest feels tight and I sometimes struggle to breathe when I'm anxious",
+    "Anxiety"
+  ],
+  [
+    "I overthink everything and it's exhausting",
+    "Anxiety"
+  ],
+  [
+    "My doctor mentioned my liver enzymes were elevated on my last blood test",
+    "Liver Disease"
+  ],
+  [
+    "I've had jaundice before and want to support my liver health while I'm here",
+    "Liver Disease"
+  ],
+  [
+    "Feeling fatigued and a bit of discomfort under my right ribs, liver issues maybe",
+    "Liver Disease"
+  ],
+  [
+    "I've noticed my skin looks slightly yellow and I want to get it checked",
+    "Liver Disease"
+  ],
+  [
+    "My doctor recommended supporting my liver after some abnormal test results",
+    "Liver Disease"
+  ],
+  [
+    "I feel nauseous after eating fatty foods, possibly liver related",
+    "Liver Disease"
+  ],
+  [
+    "I have a family history of liver issues and want a preventive wellness plan",
+    "Liver Disease"
+  ],
+  [
+    "I've been feeling unusually tired and my appetite has decreased",
+    "Liver Disease"
+  ],
+  [
+    "My blood pressure has been high for a while and I'm on medication for it",
+    "Hypertension"
+  ],
+  [
+    "I get frequent headaches and my doctor said it might be related to high blood pressure",
+    "Hypertension"
+  ],
+  [
+    "Trying to manage my hypertension naturally alongside my regular medication",
+    "Hypertension"
+  ],
+  [
+    "I feel dizzy sometimes and my doctor mentioned it could be blood pressure related",
+    "Hypertension"
+  ],
+  [
+    "My blood pressure readings have been consistently high at home",
+    "Hypertension"
+  ],
+  [
+    "I get occasional chest tightness which my doctor linked to hypertension",
+    "Hypertension"
+  ],
+  [
+    "I want to complement my blood pressure medication with natural treatment",
+    "Hypertension"
+  ],
+  [
+    "I've been told to watch my salt intake because of high blood pressure",
+    "Hypertension"
+  ],
+  [
+    "I want to do a proper detox, feeling sluggish and want to reset my system",
+    "Detox / Weight Management"
+  ],
+  [
+    "Looking to lose some weight and cleanse my body after months of poor eating",
+    "Detox / Weight Management"
+  ],
+  [
+    "I feel bloated and heavy all the time, want a proper cleanse program",
+    "Detox / Weight Management"
+  ],
+  [
+    "I've gained weight recently and want a structured program to lose it",
+    "Detox / Weight Management"
+  ],
+  [
+    "I feel sluggish all the time and think my body needs a proper cleanse",
+    "Detox / Weight Management"
+  ],
+  [
+    "I want to reset my metabolism after months of unhealthy habits",
+    "Detox / Weight Management"
+  ],
+  [
+    "My digestion feels off and I think a detox would help",
+    "Detox / Weight Management"
+  ],
+  [
+    "I'm looking for a weight loss program combined with traditional treatments",
+    "Detox / Weight Management"
+  ],
+  [
+    "Nothing specific wrong, just want a relaxing wellness experience while I'm on holiday",
+    "General Wellness"
+  ],
+  [
+    "I'm generally healthy but want to try an authentic Ayurveda wellness package",
+    "General Wellness"
+  ],
+  [
+    "Just looking for some rejuvenation and relaxation, no particular medical issue",
+    "General Wellness"
+  ],
+  [
+    "I don't have any specific complaints, just want to feel more balanced overall",
+    "General Wellness"
+  ],
+  [
+    "I'm curious about Ayurveda and want a general wellness check",
+    "General Wellness"
+  ],
+  [
+    "I want to maintain my health while on holiday, nothing specific bothering me",
+    "General Wellness"
+  ],
+  [
+    "I'm looking for a relaxing experience to rejuvenate during my trip",
+    "General Wellness"
+  ],
+  [
+    "Just interested in trying traditional wellness treatments while I'm here",
+    "General Wellness"
+  ],
+  [
+    "I get severe headaches with light sensitivity and sometimes nausea, migraines I think",
+    "Migraine"
+  ],
+  [
+    "Recurring headaches on one side of my head that can last a whole day",
+    "Migraine"
+  ],
+  [
+    "My migraines have been getting more frequent, looking for a natural treatment",
+    "Migraine"
+  ],
+  [
+    "My head hurts",
+    "Migraine"
+  ],
+  [
+    "I have a headache",
+    "Migraine"
+  ],
+  [
+    "My head has been pounding all day",
+    "Migraine"
+  ],
+  [
+    "I get bad headaches that make me sensitive to light",
+    "Migraine"
+  ],
+  [
+    "Severe headache on one side of my head",
+    "Migraine"
+  ],
+  [
+    "My head is throbbing and I feel nauseous",
+    "Migraine"
+  ],
+  [
+    "I have a persistent skin rash that won't go away, itchy and red patches",
+    "Skin Condition"
+  ],
+  [
+    "Dealing with eczema flare-ups, my skin gets really dry and irritated",
+    "Skin Condition"
+  ],
+  [
+    "I have psoriasis and want to try Ayurvedic treatment for my skin",
+    "Skin Condition"
+  ],
+  [
+    "I have red, itchy patches on my arms that won't go away",
+    "Skin Condition"
+  ],
+  [
+    "My skin breaks out in hives sometimes for no clear reason",
+    "Skin Condition"
+  ],
+  [
+    "I have chronic dry skin that gets worse in certain seasons",
+    "Skin Condition"
+  ],
+  [
+    "There's a rash on my legs that's been bothering me for weeks",
+    "Skin Condition"
+  ],
+  [
+    "I want treatment for acne that hasn't responded to normal products",
+    "Skin Condition"
+  ],
+  [
+    "My knee hurts",
+    "Arthritis"
+  ],
+  [
+    "My shoulder hurts",
+    "Joint Pain"
+  ],
+  [
+    "My leg hurts",
+    "Sciatica"
+  ],
+  [
+    "My back hurts",
+    "Back Pain"
+  ],
+  [
+    "I feel stressed",
+    "Stress"
+  ],
+  [
+    "I feel anxious",
+    "Anxiety"
+  ],
+  [
+    "My liver hurts",
+    "Liver Disease"
+  ],
+  [
+    "My blood pressure is high",
+    "Hypertension"
+  ],
+  [
+    "I want to detox",
+    "Detox / Weight Management"
+  ],
+  [
+    "I want to relax",
+    "General Wellness"
+  ],
+  [
+    "My skin itches",
+    "Skin Condition"
+  ]
+]

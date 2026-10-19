@@ -1,0 +1,29 @@
+# secrets: real env files never go to GitHub (the .example templates are fine)
+.env
+.env.*
+!.env.example
+
+# dependencies
+node_modules/
+.venv/
+venv/
+
+# build output (Vercel rebuilds these)
+dist/
+build/
+
+# python
+__pycache__/
+*.pyc
+
+# logs, OS, editor
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# local secrets and databases
+.secret_key
+*.db
+*.sqlite3

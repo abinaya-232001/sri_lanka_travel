@@ -1,0 +1,7 @@
+site_name,latitude_x,longitude_x,temperature_c,humidity_percent,weather_description,wind_speed_ms,rainfall_mm,timestamp,site_id,district,province,latitude_y,longitude_y,category,annual_visitors_2024,capacity_per_day,entrance_fee_lkr,is_unesco,is_eco_friendly,crowd_level
+Galle Fort,6.0328,80.2168,29.17,66,overcast clouds,3.52,0,2026-04-04 13:32:02.567813,2,Galle,Southern,6.0328,80.2168,Heritage,500000,4000,0,1,0,32
+Mirissa Beach,5.9483,80.4716,30.23,62,overcast clouds,3.4,0,2026-04-04 13:32:05.744376,5,Matara,Southern,5.9483,80.4716,Beach,250000,5000,0,0,1,37
+Yala National Park,6.3728,81.5216,29.19,70,overcast clouds,4.91,0,2026-04-04 13:32:07.595582,4,Hambantota,Southern,6.3728,81.5216,Nature,350000,1200,3000,0,1,62
+Nuwara Eliya,6.9497,80.7891,17.81,76,overcast clouds,2.09,0,2026-04-04 13:32:11.988514,8,Nuwara Eliya,Central,6.9497,80.7891,Nature,300000,6000,0,0,1,61
+Arugam Bay,6.8397,81.831,29.1,70,overcast clouds,4.11,0,2026-04-04 13:32:17.192612,12,Ampara,Eastern,6.8397,81.831,Beach,150000,4000,0,0,1,1
+Trincomalee,8.5922,81.2152,29.35,67,overcast clouds,4.28,0,2026-04-04 13:32:21.510823,17,Trincomalee,Eastern,8.5922,81.2152,Beach,180000,5000,0,0,1,30

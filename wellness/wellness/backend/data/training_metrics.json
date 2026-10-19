@@ -1,0 +1,33 @@
+{
+  "dosha_rf": {
+    "test_accuracy": 0.81,
+    "test_f1": 0.794,
+    "cv5_mean": 0.8428571428571429,
+    "cv5_std": 0.09814608021324381
+  },
+  "safety_svm": {
+    "accuracy": 0.831,
+    "precision": 1.0,
+    "recall": 0.077,
+    "f1": 0.143
+  },
+  "symptom_svm_loo": {
+    "en": "64.2%",
+    "de": "55.0%",
+    "ru": "59.5%",
+    "zh": "74.3%",
+    "ja": "64.2%"
+  },
+  "spiritual_svm_loo": {
+    "en": "79.6%",
+    "de": "38.9%",
+    "ru": "42.6%",
+    "zh": "87.0%",
+    "ja": "77.8%"
+  },
+  "outcome_rfr": {
+    "loo_mae": 4.73,
+    "loo_r2": 0.624
+  },
+  "sklearn_version": "1.8.0"
+}

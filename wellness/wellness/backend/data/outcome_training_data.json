@@ -1,0 +1,434 @@
+[
+  {
+    "age": 46,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 21,
+    "outcome_pct": 85,
+    "source": "real_case"
+  },
+  {
+    "age": 65,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 30,
+    "outcome_pct": 75,
+    "source": "real_case"
+  },
+  {
+    "age": 35,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 21,
+    "outcome_pct": 80,
+    "source": "real_case"
+  },
+  {
+    "age": 46,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 21,
+    "outcome_pct": 90,
+    "source": "real_case"
+  },
+  {
+    "age": 56,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 30,
+    "outcome_pct": 65,
+    "source": "real_case"
+  },
+  {
+    "age": 50,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 14,
+    "outcome_pct": 68,
+    "source": "real_case"
+  },
+  {
+    "age": 51,
+    "dosha": "Pitta",
+    "condition": "Arthritis",
+    "duration_days": 17,
+    "outcome_pct": 78.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 35,
+    "dosha": "Kapha",
+    "condition": "Arthritis",
+    "duration_days": 27,
+    "outcome_pct": 95.0,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 33,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 25,
+    "outcome_pct": 83.7,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 37,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 19,
+    "outcome_pct": 79.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 37,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 27,
+    "outcome_pct": 90.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 38,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 23,
+    "outcome_pct": 91.1,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 31,
+    "dosha": "Vata",
+    "condition": "Arthritis",
+    "duration_days": 28,
+    "outcome_pct": 93.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 41,
+    "dosha": "Pitta",
+    "condition": "Arthritis",
+    "duration_days": 20,
+    "outcome_pct": 80.4,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 62,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 26,
+    "outcome_pct": 71.2,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 58,
+    "dosha": "Pitta",
+    "condition": "Paralysis",
+    "duration_days": 37,
+    "outcome_pct": 80.7,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 79,
+    "dosha": "Pitta",
+    "condition": "Paralysis",
+    "duration_days": 31,
+    "outcome_pct": 77.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 69,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 30,
+    "outcome_pct": 76.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 51,
+    "dosha": "Pitta",
+    "condition": "Paralysis",
+    "duration_days": 35,
+    "outcome_pct": 85.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 77,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 28,
+    "outcome_pct": 70.6,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 64,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 35,
+    "outcome_pct": 74.1,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 61,
+    "dosha": "Vata",
+    "condition": "Paralysis",
+    "duration_days": 28,
+    "outcome_pct": 76.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 41,
+    "dosha": "Kapha",
+    "condition": "Sciatica",
+    "duration_days": 26,
+    "outcome_pct": 78.2,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 43,
+    "dosha": "Pitta",
+    "condition": "Sciatica",
+    "duration_days": 19,
+    "outcome_pct": 74.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 49,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 26,
+    "outcome_pct": 77.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 30,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 28,
+    "outcome_pct": 81.7,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 21,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 28,
+    "outcome_pct": 83.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 26,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 25,
+    "outcome_pct": 81.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 40,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 23,
+    "outcome_pct": 85.4,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 34,
+    "dosha": "Vata",
+    "condition": "Sciatica",
+    "duration_days": 18,
+    "outcome_pct": 81.3,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 48,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 20,
+    "outcome_pct": 88.2,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 49,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 22,
+    "outcome_pct": 96.1,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 35,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 24,
+    "outcome_pct": 96.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 58,
+    "dosha": "Vata",
+    "condition": "Liver Disease",
+    "duration_days": 17,
+    "outcome_pct": 89.3,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 44,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 25,
+    "outcome_pct": 93.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 45,
+    "dosha": "Kapha",
+    "condition": "Liver Disease",
+    "duration_days": 24,
+    "outcome_pct": 96.3,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 31,
+    "dosha": "Pitta",
+    "condition": "Liver Disease",
+    "duration_days": 26,
+    "outcome_pct": 97.4,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 48,
+    "dosha": "Kapha",
+    "condition": "Liver Disease",
+    "duration_days": 28,
+    "outcome_pct": 92.0,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 50,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 31,
+    "outcome_pct": 71.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 69,
+    "dosha": "Kapha",
+    "condition": "Stress",
+    "duration_days": 36,
+    "outcome_pct": 69.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 57,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 26,
+    "outcome_pct": 60.0,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 61,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 33,
+    "outcome_pct": 61.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 65,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 27,
+    "outcome_pct": 65.2,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 57,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 25,
+    "outcome_pct": 61.7,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 44,
+    "dosha": "Vata",
+    "condition": "Stress",
+    "duration_days": 30,
+    "outcome_pct": 70.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 50,
+    "dosha": "Kapha",
+    "condition": "Stress",
+    "duration_days": 28,
+    "outcome_pct": 70.1,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 37,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 20,
+    "outcome_pct": 68.4,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 59,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 17,
+    "outcome_pct": 64.0,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 50,
+    "dosha": "Kapha",
+    "condition": "Hypertension",
+    "duration_days": 17,
+    "outcome_pct": 74.3,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 48,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 12,
+    "outcome_pct": 70.2,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 57,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 12,
+    "outcome_pct": 64.5,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 56,
+    "dosha": "Pitta",
+    "condition": "Hypertension",
+    "duration_days": 19,
+    "outcome_pct": 74.9,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 49,
+    "dosha": "Vata",
+    "condition": "Hypertension",
+    "duration_days": 10,
+    "outcome_pct": 63.8,
+    "source": "expert_informed_augmented"
+  },
+  {
+    "age": 53,
+    "dosha": "Vata",
+    "condition": "Hypertension",
+    "duration_days": 17,
+    "outcome_pct": 63.4,
+    "source": "expert_informed_augmented"
+  }
+]

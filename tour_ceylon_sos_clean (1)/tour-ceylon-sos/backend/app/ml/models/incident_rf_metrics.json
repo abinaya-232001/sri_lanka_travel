@@ -1,0 +1,462 @@
+{
+  "evaluated_on": "1943 handwritten messages (5-fold, generated messages never tested)",
+  "accuracy": 0.9233,
+  "confidence_threshold": 0.4,
+  "share_above_threshold": 0.9727,
+  "accuracy_above_threshold": 0.9349,
+  "accuracy_below_threshold": 0.5094,
+  "per_class": {
+    "accident": {
+      "precision": 0.9296875,
+      "recall": 0.9153846153846154,
+      "f1-score": 0.9224806201550387,
+      "support": 130.0
+    },
+    "animal_attack": {
+      "precision": 0.9767441860465116,
+      "recall": 0.9767441860465116,
+      "f1-score": 0.9767441860465116,
+      "support": 129.0
+    },
+    "drowning": {
+      "precision": 0.8623188405797102,
+      "recall": 0.9153846153846154,
+      "f1-score": 0.8880597014925373,
+      "support": 130.0
+    },
+    "financial_fraud": {
+      "precision": 0.9461538461538461,
+      "recall": 0.9761904761904762,
+      "f1-score": 0.9609375,
+      "support": 126.0
+    },
+    "fire": {
+      "precision": 0.9485294117647058,
+      "recall": 0.9923076923076923,
+      "f1-score": 0.9699248120300752,
+      "support": 130.0
+    },
+    "harassment": {
+      "precision": 0.924812030075188,
+      "recall": 0.9461538461538461,
+      "f1-score": 0.935361216730038,
+      "support": 130.0
+    },
+    "lost_passport": {
+      "precision": 0.9921875,
+      "recall": 0.9769230769230769,
+      "f1-score": 0.9844961240310077,
+      "support": 130.0
+    },
+    "lost_rescue": {
+      "precision": 0.8787878787878788,
+      "recall": 0.8923076923076924,
+      "f1-score": 0.8854961832061069,
+      "support": 130.0
+    },
+    "medical": {
+      "precision": 0.8740740740740741,
+      "recall": 0.9076923076923077,
+      "f1-score": 0.8905660377358491,
+      "support": 130.0
+    },
+    "missing_person": {
+      "precision": 0.9032258064516129,
+      "recall": 0.8615384615384616,
+      "f1-score": 0.8818897637795275,
+      "support": 130.0
+    },
+    "natural_disaster": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8615384615384616,
+      "f1-score": 0.8995983935742972,
+      "support": 130.0
+    },
+    "other": {
+      "precision": 0.872,
+      "recall": 0.8515625,
+      "f1-score": 0.8616600790513834,
+      "support": 128.0
+    },
+    "physical_assault": {
+      "precision": 0.9112903225806451,
+      "recall": 0.8692307692307693,
+      "f1-score": 0.889763779527559,
+      "support": 130.0
+    },
+    "sexual_assault": {
+      "precision": 0.9236641221374046,
+      "recall": 0.9307692307692308,
+      "f1-score": 0.9272030651340997,
+      "support": 130.0
+    },
+    "theft": {
+      "precision": 0.9694656488549618,
+      "recall": 0.9769230769230769,
+      "f1-score": 0.9731800766283525,
+      "support": 130.0
+    },
+    "accuracy": 0.9233144621718992,
+    "macro avg": {
+      "precision": 0.9236078425396516,
+      "recall": 0.9233767338927223,
+      "f1-score": 0.9231574359414924,
+      "support": 1943.0
+    },
+    "weighted avg": {
+      "precision": 0.923587201946299,
+      "recall": 0.9233144621718992,
+      "f1-score": 0.9231153812361095,
+      "support": 1943.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "accident",
+      "animal_attack",
+      "drowning",
+      "financial_fraud",
+      "fire",
+      "harassment",
+      "lost_passport",
+      "lost_rescue",
+      "medical",
+      "missing_person",
+      "natural_disaster",
+      "other",
+      "physical_assault",
+      "sexual_assault",
+      "theft"
+    ],
+    "matrix": [
+      [
+        119,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        126,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        119,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        7,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        123,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        129,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        123,
+        0,
+        0,
+        3,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        127,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        116,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        2,
+        0,
+        0,
+        2,
+        118,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        6,
+        4,
+        112,
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        6,
+        0,
+        2,
+        1,
+        0,
+        3,
+        1,
+        0,
+        112,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        3,
+        5,
+        0,
+        2,
+        2,
+        0,
+        4,
+        109,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        113,
+        8,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        2,
+        121,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        127
+      ]
+    ]
+  },
+  "top_confusions": [
+    {
+      "true": "physical_assault",
+      "predicted": "sexual_assault",
+      "count": 8
+    },
+    {
+      "true": "drowning",
+      "predicted": "missing_person",
+      "count": 7
+    },
+    {
+      "true": "natural_disaster",
+      "predicted": "drowning",
+      "count": 6
+    },
+    {
+      "true": "lost_rescue",
+      "predicted": "drowning",
+      "count": 6
+    },
+    {
+      "true": "missing_person",
+      "predicted": "lost_rescue",
+      "count": 6
+    },
+    {
+      "true": "other",
+      "predicted": "harassment",
+      "count": 5
+    },
+    {
+      "true": "other",
+      "predicted": "natural_disaster",
+      "count": 4
+    },
+    {
+      "true": "missing_person",
+      "predicted": "medical",
+      "count": 4
+    },
+    {
+      "true": "accident",
+      "predicted": "physical_assault",
+      "count": 4
+    },
+    {
+      "true": "medical",
+      "predicted": "drowning",
+      "count": 3
+    }
+  ],
+  "model": "TF-IDF (word + char, chi2 top 2000) + incident lexicon -> RandomForest(200 trees)",
+  "n_training_messages": 4950,
+  "class_counts": {
+    "fire": 330,
+    "accident": 330,
+    "medical": 330,
+    "sexual_assault": 330,
+    "theft": 330,
+    "physical_assault": 330,
+    "natural_disaster": 330,
+    "missing_person": 330,
+    "lost_rescue": 330,
+    "harassment": 330,
+    "animal_attack": 330,
+    "drowning": 330,
+    "lost_passport": 330,
+    "financial_fraud": 330,
+    "other": 330
+  },
+  "sklearn_version": "1.8.0",
+  "trained_at": "2026-10-18T18:22:53.328089+00:00"
+}
