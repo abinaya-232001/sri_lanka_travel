@@ -27,3 +27,6 @@ Thumbs.db
 .secret_key
 *.db
 *.sqlite3
+
+# local backup copies
+*.bak_*

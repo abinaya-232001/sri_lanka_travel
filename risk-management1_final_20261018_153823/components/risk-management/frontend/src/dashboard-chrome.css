@@ -74,7 +74,8 @@
   margin-top: 48px;
   border-top: 1px solid #E7E1D8;
 }
-.tc-dash-grid { display: grid; grid-template-columns: 1.35fr 0.8fr 0.95fr 1.05fr; gap: 28px 36px; padding: 36px 0 28px; }
+.tc-dash { overflow-x: clip; }
+.tc-dash-grid { display: grid; grid-template-columns: 1.4fr 1fr 1.1fr; gap: 28px 36px; padding: 36px 0 28px; }
 .tc-dash-brand-col .tc-dash-brand { font-size: 22px; margin-bottom: 8px; }
 .tc-dash-brand-col p { margin: 0; max-width: 32ch; color: #7A5A3A; line-height: 1.5; }
 .tc-dash-foot h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; color: #BF7E46; }

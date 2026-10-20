@@ -15,7 +15,7 @@ const NAV = [
   { href: `${APP}/#/home`, label: "Home" },
   { href: `${APP}/#/itinerary/plan`, label: "Itinerary" },
   { href: "http://localhost:5003/", label: "Wellness" },
-  { href: "http://localhost:5182/?embed=1", label: "Risk analyst", current: true },
+  { href: "http://localhost:5182/", label: "Risk analyst", current: true },
   { href: `${APP}/#/sos`, label: "SOS" },
 ];
 
@@ -64,13 +64,6 @@ export default function DashboardChrome({ children }) {
               TourCeylon
             </a>
             <p>Explore Sri Lanka's cultural and natural heritage with our curated journeys.</p>
-          </div>
-          <div className="tc-dash-col">
-            <h3>Quick Links</h3>
-            <a href={`${APP}/#/home`}>About Us</a>
-            <a href="mailto:info@tourceylon.com">Contact</a>
-            <a href={`${APP}/#/home`}>Terms</a>
-            <a href={`${APP}/#/home`}>Privacy</a>
           </div>
           <div className="tc-dash-col">
             <h3>Experience Lanka</h3>

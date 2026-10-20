@@ -12,6 +12,15 @@ const PRESSURE_KEYS = {
   Unknown: "ldRiskUnknown",
 };
 
+// One source of truth for map markers AND legend dots.
+const LEVEL_COLORS = {
+  Low: "#2A9D8F",
+  Moderate: "#E9C46A",
+  High: "#F57C00",
+  Critical: "#B71C1C",
+};
+const LEVEL_RANK = { Unknown: 0, Low: 1, Moderate: 2, High: 3, Critical: 4 };
+
 export default function SriLankaMap() {
   const { t } = useSiteI18n();
   const containerRef = useRef(null);
@@ -50,16 +59,22 @@ export default function SriLankaMap() {
       pressureData.sites.forEach((s) => { pressureBySite[s.site_id] = s; });
     }
 
-    sitesData.sites.forEach((site) => {
+    const levelOf = (site) => {
+      const p = pressureBySite[site.site_id];
+      return p ? p.pressure_level : "Unknown";
+    };
+    // Draw low levels first so Critical markers end up on top.
+    const ordered = sitesData.sites.slice().sort((a, b) => (LEVEL_RANK[levelOf(a)] || 0) - (LEVEL_RANK[levelOf(b)] || 0));
+
+    ordered.forEach((site) => {
       if (!site.latitude || !site.longitude) return;
       const pressure = pressureBySite[site.site_id];
       const level = pressure ? pressure.pressure_level : "Unknown";
-      const colorMap = { Low: tokens.accentBright, Moderate: tokens.warm, High: tokens.danger, Critical: "#B91C1C", Unknown: tokens.textFaint };
-      const color = colorMap[level] || tokens.textFaint;
+      const color = LEVEL_COLORS[level] || tokens.textFaint;
       const levelLabel = t(PRESSURE_KEYS[level] || "ldRiskUnknown");
 
       const marker = window.L.circleMarker([site.latitude, site.longitude], {
-        radius: 7, color, fillColor: color, fillOpacity: 0.75, weight: 1.5,
+        radius: 7, color: "#ffffff", fillColor: color, fillOpacity: 0.85, weight: 1.5,
       }).addTo(map);
 
       marker.bindPopup(
@@ -84,10 +99,10 @@ export default function SriLankaMap() {
           </div>
         </div>
         <div style={{ display: "flex", gap: "14px", fontSize: "15px", color: "#1C1917" }}>
-          <LegendDot color={tokens.accentBright} label={t("ldRiskLow")} />
-          <LegendDot color={tokens.warm} label={t("ldPressureModerate")} />
-          <LegendDot color={tokens.danger} label={t("ldRiskHigh")} />
-          <LegendDot color="#B91C1C" label={t("ldPressureCritical")} />
+          <LegendDot color={LEVEL_COLORS.Low} label={t("ldRiskLow")} />
+          <LegendDot color={LEVEL_COLORS.Moderate} label={t("ldPressureModerate")} />
+          <LegendDot color={LEVEL_COLORS.High} label={t("ldRiskHigh")} />
+          <LegendDot color={LEVEL_COLORS.Critical} label={t("ldPressureCritical")} />
         </div>
       </div>
       <div ref={containerRef} style={{ height: "480px" }} />
